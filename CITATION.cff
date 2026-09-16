@@ -16,7 +16,7 @@ type: software
 # artifact/pipeline/classifier/tracker_lists/ keep their upstream licenses; see
 # LICENSE and artifact/pipeline/classifier/tracker_lists/LICENSES.md.
 license: MIT
-repository-code: "https://github.com/0xk1h0/Browser_agent_measurement"
+repository-code: "https://github.com/0xk1h0/Browsing_Trackers"
 keywords:
   - browser agents
   - LLM agents
