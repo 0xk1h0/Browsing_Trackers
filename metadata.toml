@@ -1,5 +1,5 @@
 badge = "r"
-artifact_url = "https://github.com/0xk1h0/Browser_agent_measurement"
+artifact_url = "https://github.com/0xk1h0/Browsing_Trackers"
 cd = "b"
 
 citation = """
@@ -12,14 +12,14 @@ citation = """
 }
 """
 
-license_url = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/license.txt"
+license_url = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/license.txt"
 
 # ---------------------------------------------------------------------------
 # Infrastructure (public)
 # ---------------------------------------------------------------------------
-infrastructure_url = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/infrastructure/url"
-infrastructure_resources = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/infrastructure/resources"
-infrastructure_allocation_file = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/infrastructure/allocation"
+infrastructure_url = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/infrastructure/url"
+infrastructure_resources = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/infrastructure/resources"
+infrastructure_allocation_file = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/infrastructure/allocation"
 infrastructure_allocation = """
 No allocation or reservation is needed. The reproduction runs on the Google \
 Colab free tier with a standard CPU runtime; the notebook linked from \
@@ -29,7 +29,7 @@ prefer a container can build the Dockerfile at the repository root instead. Peak
 420 MB and the whole reproduction takes under ten seconds.
 """
 
-install_script = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/install.sh"
+install_script = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/install.sh"
 
 use = """
 See use.txt in the repository root. In short: this artifact is for reproducing \
@@ -163,7 +163,7 @@ data: running the released tracker classifier and per-session aggregator over \
 the released raw session captures regenerates the published per-session metrics \
 (paper Section 4.2, Appendix A).
 """
-script7 = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/claims/07_pipeline/run.sh"
+script7 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/07_pipeline/run.sh"
 expected7 = """
 Unpacks the 221 released human session bundles and re-runs the classifier and \
 aggregator over their raw captures, with no GPU, proxy, model, or network. \
@@ -212,7 +212,7 @@ gui = "n"
 # ---------------------------------------------------------------------------
 # Data artifact
 # ---------------------------------------------------------------------------
-provenance = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/artifact/docs/PROVENANCE.md"
-ethics = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/artifact/docs/ETHICS.md"
+provenance = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/artifact/docs/PROVENANCE.md"
+ethics = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/artifact/docs/ETHICS.md"
 
-readme = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/README.txt"
+readme = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/README.txt"
