@@ -1,0 +1,11 @@
+task	human	Browser-Use	Fara-7B	OpenCUA-7B	SoM-GLM	SoM-GPT-5	UI-TARS	GUI-Owl-8B
+Amazon--32	5	52	30	47	49	52	27	46
+Apple--29	2	8	2	2	2	2	2	2
+ArXiv--17	0	9	4	1	0	0	0	0
+Booking--3	32	54	57	66	41	42	36	38
+Coursera--21	27	10	38	40	17	35	15	28
+GitHub--35	2	5	7	2	2	3	2	2
+Google Flights--34	2	13	10	10	10	10	5	10
+Google Map--35	3	14	13	7	11	13	11	11
+Google Search--28	116	6	26	4	4	5	4	4
+Huggingface--14	0	12	8	8	8	8	8	8

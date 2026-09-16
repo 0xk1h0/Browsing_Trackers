@@ -1,0 +1,41 @@
+Allocation instructions
+=======================
+
+None needed. Nothing has to be reserved, requested, or scheduled, and no
+account of ours has to be shared with you.
+
+Google Colab (recommended)
+--------------------------
+Open the notebook linked in infrastructure/url and choose Run all. Use a
+standard CPU runtime; do not select a GPU, because nothing in the evaluation
+uses one. The free tier is enough: the reproduction peaks at about 421 MB of
+memory and finishes in about seven seconds, and the clone plus dependency
+install dominate the wall clock.
+
+Container (Chameleon, CloudLab, or a local Docker daemon)
+---------------------------------------------------------
+    docker build -t brave-new-browsing .
+    docker run --rm --network none brave-new-browsing
+
+A single small instance is enough. The build needs network access to install
+four Python packages; the run itself is offline, which is why the command above
+passes --network none.
+
+Any Linux machine
+-----------------
+    bash install.sh
+    PYTHON=$PWD/.venv/bin/python bash artifact/REPRODUCE.sh
+
+One core, 1 GB of RAM, and about 500 MB of disk including the virtual
+environment.
+
+Credentials
+-----------
+None. The evaluation path makes no authenticated call, needs no API key, and
+contacts no service of ours. The only network access in the whole process is
+cloning this repository and installing four Python packages from PyPI.
+
+Time budget
+-----------
+Well under the one day ACSAC allows for an evaluation task. See
+infrastructure/resources for measured numbers.

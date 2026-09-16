@@ -1,0 +1,109 @@
+{
+  "browser-use": {
+    "C0": {
+      "n": 643,
+      "success": 640,
+      "success_rate_pct": 99.5,
+      "status_breakdown": {
+        "success": 640,
+        "_empty": 2,
+        "agent_error": 1
+      }
+    },
+    "C2": {
+      "n": 643,
+      "success": 642,
+      "success_rate_pct": 99.8,
+      "status_breakdown": {
+        "success": 642,
+        "_empty": 1
+      }
+    },
+    "C5": {
+      "n": 643,
+      "success": 641,
+      "success_rate_pct": 99.7,
+      "status_breakdown": {
+        "success": 641,
+        "agent_error": 1,
+        "_empty": 1
+      }
+    },
+    "C7": {
+      "n": 643,
+      "success": 642,
+      "success_rate_pct": 99.8,
+      "status_breakdown": {
+        "success": 642,
+        "_empty": 1
+      }
+    },
+    "C8": {
+      "n": 643,
+      "success": 641,
+      "success_rate_pct": 99.7,
+      "status_breakdown": {
+        "success": 641,
+        "agent_error": 1,
+        "_empty": 1
+      }
+    }
+  },
+  "fara-7b": {
+    "C0": {
+      "n": 643,
+      "success": 351,
+      "success_rate_pct": 54.6,
+      "status_breakdown": {
+        "success": 351,
+        "hit_max_rounds": 277,
+        "agent_error": 14,
+        "unknown": 1
+      }
+    },
+    "C2": {
+      "n": 643,
+      "success": 267,
+      "success_rate_pct": 41.5,
+      "status_breakdown": {
+        "hit_max_rounds": 357,
+        "success": 267,
+        "agent_error": 17,
+        "unknown": 2
+      }
+    },
+    "C5": {
+      "n": 643,
+      "success": 341,
+      "success_rate_pct": 53.0,
+      "status_breakdown": {
+        "success": 341,
+        "hit_max_rounds": 285,
+        "unknown": 4,
+        "agent_error": 13
+      }
+    },
+    "C7": {
+      "n": 643,
+      "success": 278,
+      "success_rate_pct": 43.2,
+      "status_breakdown": {
+        "hit_max_rounds": 347,
+        "success": 278,
+        "agent_error": 16,
+        "unknown": 2
+      }
+    },
+    "C8": {
+      "n": 643,
+      "success": 270,
+      "success_rate_pct": 42.0,
+      "status_breakdown": {
+        "success": 270,
+        "hit_max_rounds": 360,
+        "agent_error": 12,
+        "unknown": 1
+      }
+    }
+  }
+}

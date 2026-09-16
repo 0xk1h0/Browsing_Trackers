@@ -1,0 +1,52 @@
+{
+  "n_sessions_selected": 50,
+  "n_sessions_with_capture": 50,
+  "n_sessions_missing_capture": 0,
+  "total_rtb_requests": 15949,
+  "rtb_with_identifying_cookie": 11323,
+  "identifying_cookie_share_pct": 71.0,
+  "top_10_rtb_hosts": [
+    [
+      "cm.g.doubleclick.net",
+      1600
+    ],
+    [
+      "pagead2.googlesyndication.com",
+      1590
+    ],
+    [
+      "securepubads.g.doubleclick.net",
+      734
+    ],
+    [
+      "fastlane.rubiconproject.com",
+      715
+    ],
+    [
+      "pixel.rubiconproject.com",
+      615
+    ],
+    [
+      "s.amazon-adsystem.com",
+      600
+    ],
+    [
+      "ib.adnxs.com",
+      558
+    ],
+    [
+      "match.adsrvr.org",
+      465
+    ],
+    [
+      "ad.doubleclick.net",
+      452
+    ],
+    [
+      "simage2.pubmatic.com",
+      415
+    ]
+  ],
+  "median_rtb_per_session": 266,
+  "mean_rtb_per_session": 319.0
+}

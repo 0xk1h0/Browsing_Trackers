@@ -1,0 +1,564 @@
+{
+  "n_participants": 22,
+  "n_human_sessions": 220,
+  "target_tasks": [
+    "Amazon--32",
+    "Apple--29",
+    "ArXiv--17",
+    "Booking--3",
+    "Coursera--21",
+    "GitHub--35",
+    "Google Flights--34",
+    "Google Map--35",
+    "Google Search--28",
+    "Huggingface--14"
+  ],
+  "per_agent": {
+    "Fara-7B": {
+      "n_agent_sessions": 20,
+      "n_tasks_covered": 10,
+      "per_metric": {
+        "M_P": {
+          "agent": "Fara-7B",
+          "metric": "M_P",
+          "n_pairs": 220,
+          "human_mean": 390.35,
+          "human_median": 337.0,
+          "agent_mean": 325.8,
+          "agent_median": 362.5,
+          "mean_delta": -64.55,
+          "median_delta": -12.5,
+          "hl_delta": -25.25,
+          "ci95_median_delta": [
+            -29.0,
+            -6.0
+          ],
+          "wilcoxon_stat": 8348.0,
+          "wilcoxon_p_one_sided_greater": 0.9999138918028496
+        },
+        "M_T": {
+          "agent": "Fara-7B",
+          "metric": "M_T",
+          "n_pairs": 220,
+          "human_mean": 16.936363636363637,
+          "human_median": 3.0,
+          "agent_mean": 19.7,
+          "agent_median": 11.5,
+          "mean_delta": 2.7636363636363637,
+          "median_delta": 8.0,
+          "hl_delta": 8.0,
+          "ci95_median_delta": [
+            8.0,
+            8.0
+          ],
+          "wilcoxon_stat": 16999.0,
+          "wilcoxon_p_one_sided_greater": 4.1286392415816654e-15
+        },
+        "M_X": {
+          "agent": "Fara-7B",
+          "metric": "M_X",
+          "n_pairs": 220,
+          "human_mean": 0.5363636363636364,
+          "human_median": 0.0,
+          "agent_mean": 3.45,
+          "agent_median": 1.75,
+          "mean_delta": 2.9136363636363636,
+          "median_delta": 1.5,
+          "hl_delta": 1.5,
+          "ci95_median_delta": [
+            1.0,
+            1.5
+          ],
+          "wilcoxon_stat": 14068.0,
+          "wilcoxon_p_one_sided_greater": 6.952087555522279e-21
+        },
+        "M_F": {
+          "agent": "Fara-7B",
+          "metric": "M_F",
+          "n_pairs": 220,
+          "human_mean": 8.177272727272728,
+          "human_median": 0.0,
+          "agent_mean": 21.3,
+          "agent_median": 2.5,
+          "mean_delta": 13.122727272727273,
+          "median_delta": 0.0,
+          "hl_delta": 0.75,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 6857.0,
+          "wilcoxon_p_one_sided_greater": 3.0447381091709367e-07
+        }
+      }
+    },
+    "Browser-Use": {
+      "n_agent_sessions": 20,
+      "n_tasks_covered": 10,
+      "per_metric": {
+        "M_P": {
+          "agent": "Browser-Use",
+          "metric": "M_P",
+          "n_pairs": 220,
+          "human_mean": 390.35,
+          "human_median": 337.0,
+          "agent_mean": 274.0,
+          "agent_median": 98.75,
+          "mean_delta": -116.35,
+          "median_delta": -95.75,
+          "hl_delta": -113.0,
+          "ci95_median_delta": [
+            -131.75,
+            -53.0
+          ],
+          "wilcoxon_stat": 6565.5,
+          "wilcoxon_p_one_sided_greater": 0.99999999578391
+        },
+        "M_T": {
+          "agent": "Browser-Use",
+          "metric": "M_T",
+          "n_pairs": 220,
+          "human_mean": 16.936363636363637,
+          "human_median": 3.0,
+          "agent_mean": 18.35,
+          "agent_median": 11.0,
+          "mean_delta": 1.4136363636363636,
+          "median_delta": 9.0,
+          "hl_delta": 7.75,
+          "ci95_median_delta": [
+            7.0,
+            11.0
+          ],
+          "wilcoxon_stat": 16719.0,
+          "wilcoxon_p_one_sided_greater": 3.103110216391385e-07
+        },
+        "M_X": {
+          "agent": "Browser-Use",
+          "metric": "M_X",
+          "n_pairs": 220,
+          "human_mean": 0.5363636363636364,
+          "human_median": 0.0,
+          "agent_mean": 3.6,
+          "agent_median": 0.5,
+          "mean_delta": 3.0636363636363635,
+          "median_delta": 0.0,
+          "hl_delta": 1.0,
+          "ci95_median_delta": [
+            0.0,
+            1.0
+          ],
+          "wilcoxon_stat": 9924.0,
+          "wilcoxon_p_one_sided_greater": 2.3659820181973425e-08
+        },
+        "M_F": {
+          "agent": "Browser-Use",
+          "metric": "M_F",
+          "n_pairs": 220,
+          "human_mean": 8.177272727272728,
+          "human_median": 0.0,
+          "agent_mean": 5.2,
+          "agent_median": 0.0,
+          "mean_delta": -2.977272727272727,
+          "median_delta": 0.0,
+          "hl_delta": 0.0,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 1185.5,
+          "wilcoxon_p_one_sided_greater": 0.9944369147778913
+        }
+      }
+    },
+    "UI-TARS": {
+      "n_agent_sessions": 50,
+      "n_tasks_covered": 10,
+      "per_metric": {
+        "M_P": {
+          "agent": "UI-TARS",
+          "metric": "M_P",
+          "n_pairs": 220,
+          "human_mean": 390.35,
+          "human_median": 337.0,
+          "agent_mean": 98.05,
+          "agent_median": 45.5,
+          "mean_delta": -292.3,
+          "median_delta": -197.75,
+          "hl_delta": -253.25,
+          "ci95_median_delta": [
+            -278.0,
+            -165.75
+          ],
+          "wilcoxon_stat": 88.0,
+          "wilcoxon_p_one_sided_greater": 1.0
+        },
+        "M_T": {
+          "agent": "UI-TARS",
+          "metric": "M_T",
+          "n_pairs": 220,
+          "human_mean": 16.936363636363637,
+          "human_median": 3.0,
+          "agent_mean": 13.1,
+          "agent_median": 6.5,
+          "mean_delta": -3.8363636363636364,
+          "median_delta": 0.5,
+          "hl_delta": 1.25,
+          "ci95_median_delta": [
+            0.0,
+            1.5
+          ],
+          "wilcoxon_stat": 9200.0,
+          "wilcoxon_p_one_sided_greater": 0.08541781800090636
+        },
+        "M_X": {
+          "agent": "UI-TARS",
+          "metric": "M_X",
+          "n_pairs": 220,
+          "human_mean": 0.5363636363636364,
+          "human_median": 0.0,
+          "agent_mean": 0.65,
+          "agent_median": 0.25,
+          "mean_delta": 0.11363636363636363,
+          "median_delta": 0.0,
+          "hl_delta": 0.0,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 5006.0,
+          "wilcoxon_p_one_sided_greater": 0.02570212648052689
+        },
+        "M_F": {
+          "agent": "UI-TARS",
+          "metric": "M_F",
+          "n_pairs": 220,
+          "human_mean": 8.177272727272728,
+          "human_median": 0.0,
+          "agent_mean": 4.8,
+          "agent_median": 0.0,
+          "mean_delta": -3.3772727272727274,
+          "median_delta": 0.0,
+          "hl_delta": 0.0,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 292.5,
+          "wilcoxon_p_one_sided_greater": 0.9999988895587998
+        }
+      }
+    },
+    "SoM-GLM": {
+      "n_agent_sessions": 20,
+      "n_tasks_covered": 10,
+      "per_metric": {
+        "M_P": {
+          "agent": "SoM-GLM",
+          "metric": "M_P",
+          "n_pairs": 220,
+          "human_mean": 390.35,
+          "human_median": 337.0,
+          "agent_mean": 66.25,
+          "agent_median": 43.25,
+          "mean_delta": -324.1,
+          "median_delta": -246.0,
+          "hl_delta": -284.5,
+          "ci95_median_delta": [
+            -309.0,
+            -187.5
+          ],
+          "wilcoxon_stat": 0.0,
+          "wilcoxon_p_one_sided_greater": 1.0
+        },
+        "M_T": {
+          "agent": "SoM-GLM",
+          "metric": "M_T",
+          "n_pairs": 220,
+          "human_mean": 16.936363636363637,
+          "human_median": 3.0,
+          "agent_mean": 14.45,
+          "agent_median": 9.0,
+          "mean_delta": -2.4863636363636363,
+          "median_delta": 0.0,
+          "hl_delta": 3.5,
+          "ci95_median_delta": [
+            0.0,
+            7.0
+          ],
+          "wilcoxon_stat": 8275.0,
+          "wilcoxon_p_one_sided_greater": 0.03030689872056516
+        },
+        "M_X": {
+          "agent": "SoM-GLM",
+          "metric": "M_X",
+          "n_pairs": 220,
+          "human_mean": 0.5363636363636364,
+          "human_median": 0.0,
+          "agent_mean": 0.5,
+          "agent_median": 0.5,
+          "mean_delta": -0.03636363636363636,
+          "median_delta": 0.0,
+          "hl_delta": 0.0,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 3026.0,
+          "wilcoxon_p_one_sided_greater": 0.3233179978932663
+        },
+        "M_F": {
+          "agent": "SoM-GLM",
+          "metric": "M_F",
+          "n_pairs": 220,
+          "human_mean": 8.177272727272728,
+          "human_median": 0.0,
+          "agent_mean": 4.7,
+          "agent_median": 0.0,
+          "mean_delta": -3.477272727272727,
+          "median_delta": 0.0,
+          "hl_delta": -0.5,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 344.0,
+          "wilcoxon_p_one_sided_greater": 0.9999999981882839
+        }
+      }
+    },
+    "SoM-GPT-5": {
+      "n_agent_sessions": 20,
+      "n_tasks_covered": 10,
+      "per_metric": {
+        "M_P": {
+          "agent": "SoM-GPT-5",
+          "metric": "M_P",
+          "n_pairs": 220,
+          "human_mean": 390.35,
+          "human_median": 337.0,
+          "agent_mean": 189.0,
+          "agent_median": 99.75,
+          "mean_delta": -201.35,
+          "median_delta": -131.75,
+          "hl_delta": -158.0,
+          "ci95_median_delta": [
+            -161.5,
+            -107.5
+          ],
+          "wilcoxon_stat": 2339.0,
+          "wilcoxon_p_one_sided_greater": 1.0
+        },
+        "M_T": {
+          "agent": "SoM-GPT-5",
+          "metric": "M_T",
+          "n_pairs": 220,
+          "human_mean": 16.936363636363637,
+          "human_median": 3.0,
+          "agent_mean": 17.1,
+          "agent_median": 9.25,
+          "mean_delta": 0.16363636363636364,
+          "median_delta": 8.0,
+          "hl_delta": 4.75,
+          "ci95_median_delta": [
+            7.0,
+            8.0
+          ],
+          "wilcoxon_stat": 13600.0,
+          "wilcoxon_p_one_sided_greater": 3.746805392074951e-11
+        },
+        "M_X": {
+          "agent": "SoM-GPT-5",
+          "metric": "M_X",
+          "n_pairs": 220,
+          "human_mean": 0.5363636363636364,
+          "human_median": 0.0,
+          "agent_mean": 1.45,
+          "agent_median": 1.0,
+          "mean_delta": 0.9136363636363637,
+          "median_delta": 1.0,
+          "hl_delta": 0.75,
+          "ci95_median_delta": [
+            1.0,
+            1.0
+          ],
+          "wilcoxon_stat": 10738.0,
+          "wilcoxon_p_one_sided_greater": 2.3170998994270342e-10
+        },
+        "M_F": {
+          "agent": "SoM-GPT-5",
+          "metric": "M_F",
+          "n_pairs": 220,
+          "human_mean": 8.177272727272728,
+          "human_median": 0.0,
+          "agent_mean": 4.75,
+          "agent_median": 0.0,
+          "mean_delta": -3.4272727272727272,
+          "median_delta": 0.0,
+          "hl_delta": -0.5,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 362.0,
+          "wilcoxon_p_one_sided_greater": 0.9999999967729879
+        }
+      }
+    },
+    "OpenCUA-7B": {
+      "n_agent_sessions": 20,
+      "n_tasks_covered": 10,
+      "per_metric": {
+        "M_P": {
+          "agent": "OpenCUA-7B",
+          "metric": "M_P",
+          "n_pairs": 220,
+          "human_mean": 390.35,
+          "human_median": 337.0,
+          "agent_mean": 678.05,
+          "agent_median": 97.0,
+          "mean_delta": 287.7,
+          "median_delta": -21.5,
+          "hl_delta": -19.0,
+          "ci95_median_delta": [
+            -68.0,
+            -12.0
+          ],
+          "wilcoxon_stat": 11134.5,
+          "wilcoxon_p_one_sided_greater": 0.8598573073139182
+        },
+        "M_T": {
+          "agent": "OpenCUA-7B",
+          "metric": "M_T",
+          "n_pairs": 220,
+          "human_mean": 16.936363636363637,
+          "human_median": 3.0,
+          "agent_mean": 18.8,
+          "agent_median": 7.5,
+          "mean_delta": 1.8636363636363635,
+          "median_delta": 4.0,
+          "hl_delta": 6.0,
+          "ci95_median_delta": [
+            4.0,
+            8.0
+          ],
+          "wilcoxon_stat": 13252.0,
+          "wilcoxon_p_one_sided_greater": 8.495112757550857e-11
+        },
+        "M_X": {
+          "agent": "OpenCUA-7B",
+          "metric": "M_X",
+          "n_pairs": 220,
+          "human_mean": 0.5363636363636364,
+          "human_median": 0.0,
+          "agent_mean": 6.9,
+          "agent_median": 0.5,
+          "mean_delta": 6.363636363636363,
+          "median_delta": 0.0,
+          "hl_delta": 2.5,
+          "ci95_median_delta": [
+            0.0,
+            1.0
+          ],
+          "wilcoxon_stat": 8840.0,
+          "wilcoxon_p_one_sided_greater": 2.0080824400602472e-13
+        },
+        "M_F": {
+          "agent": "OpenCUA-7B",
+          "metric": "M_F",
+          "n_pairs": 220,
+          "human_mean": 8.177272727272728,
+          "human_median": 0.0,
+          "agent_mean": 3.4,
+          "agent_median": 0.0,
+          "mean_delta": -4.777272727272727,
+          "median_delta": 0.0,
+          "hl_delta": 0.0,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 999.5,
+          "wilcoxon_p_one_sided_greater": 0.999861936527451
+        }
+      }
+    },
+    "GUI-Owl-8B": {
+      "n_agent_sessions": 20,
+      "n_tasks_covered": 10,
+      "per_metric": {
+        "M_P": {
+          "agent": "GUI-Owl-8B",
+          "metric": "M_P",
+          "n_pairs": 220,
+          "human_mean": 390.35,
+          "human_median": 337.0,
+          "agent_mean": 85.2,
+          "agent_median": 47.25,
+          "mean_delta": -305.15,
+          "median_delta": -231.0,
+          "hl_delta": -264.25,
+          "ci95_median_delta": [
+            -290.5,
+            -174.0
+          ],
+          "wilcoxon_stat": 0.0,
+          "wilcoxon_p_one_sided_greater": 1.0
+        },
+        "M_T": {
+          "agent": "GUI-Owl-8B",
+          "metric": "M_T",
+          "n_pairs": 220,
+          "human_mean": 16.936363636363637,
+          "human_median": 3.0,
+          "agent_mean": 14.95,
+          "agent_median": 9.0,
+          "mean_delta": -1.9863636363636363,
+          "median_delta": 1.5,
+          "hl_delta": 4.0,
+          "ci95_median_delta": [
+            1.5,
+            4.0
+          ],
+          "wilcoxon_stat": 10415.5,
+          "wilcoxon_p_one_sided_greater": 6.094494185983305e-08
+        },
+        "M_X": {
+          "agent": "GUI-Owl-8B",
+          "metric": "M_X",
+          "n_pairs": 220,
+          "human_mean": 0.5363636363636364,
+          "human_median": 0.0,
+          "agent_mean": 0.5,
+          "agent_median": 0.5,
+          "mean_delta": -0.03636363636363636,
+          "median_delta": 0.0,
+          "hl_delta": 0.0,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 3026.0,
+          "wilcoxon_p_one_sided_greater": 0.3233179978932663
+        },
+        "M_F": {
+          "agent": "GUI-Owl-8B",
+          "metric": "M_F",
+          "n_pairs": 220,
+          "human_mean": 8.177272727272728,
+          "human_median": 0.0,
+          "agent_mean": 5.4,
+          "agent_median": 0.0,
+          "mean_delta": -2.7772727272727273,
+          "median_delta": 0.0,
+          "hl_delta": 0.0,
+          "ci95_median_delta": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon_stat": 807.5,
+          "wilcoxon_p_one_sided_greater": 0.9996698882169558
+        }
+      }
+    }
+  }
+}

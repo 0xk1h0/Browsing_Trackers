@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{The ablation conditions evaluated in RQ3. We toggle three cross-site navigation responsible primitives independently ($-$search, $-$navigate, $-$CMP) and an additional negative control that disables the back-button action. }
+\label{tab:rq3-conditions}
+\small
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{
+\begin{NiceTabular}{l l c c c c l}[colortbl-like]
+\toprule
+ID & Short name & \texttt{search} & \texttt{nav} & CMP & back & Notes \\
+\midrule
+$C_0$ & default & \cmark & \cmark & \cmark & \cmark & full agent action vocabulary \\
+$C_1$ & $-$search & --- & \cmark & \cmark & \cmark & schema $+$ proxy \\
+$C_2$ & $-$navigate & \cmark & --- & \cmark & \cmark & schema (Fara) / proxy (BU) \\
+$C_3$ & $-$search,$-$navigate & --- & --- & \cmark & \cmark & 2$\times$2 factorial cell \\
+$C_4$ & $-$CMP & \cmark & \cmark & --- & \cmark & CMP CDN blocked at proxy \\
+\rowcolor{gray!10}
+$C_5$ & $-$go back & \cmark & \cmark & \cmark & --- & negative control (orthogonal axis) \\
+$C_6$ & $-$search,$-$CMP & --- & \cmark & --- & \cmark & combined search$+$CMP off \\
+$C_7$ & $-$navigate,$-$CMP & \cmark & --- & --- & \cmark & Pareto-most-favorable cell \\
+$C_8$ & $-$search,$-$navigate,$-$CMP & --- & --- & --- & \cmark & maximum factorial ablation \\
+\bottomrule
+\end{NiceTabular}
+}
+\end{table}
+

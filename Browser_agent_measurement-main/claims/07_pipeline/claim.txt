@@ -1,0 +1,57 @@
+CLAIM 7 - The measurement tool released here is the one that produced the
+paper's data. Re-running it over the released raw captures regenerates the
+published per-session numbers.
+
+Paper
+    Section 4.2, the collection pipeline, and Appendix A, artifact release.
+    This claim has no table of its own. It tests the instrument, not a
+    printed number.
+
+Run
+    bash claims/07_pipeline/run.sh
+
+    About 5 seconds. No GPU, no network, no proxy, no model. The script
+    unpacks into a temporary directory and removes it on exit, so it does
+    not modify the artifact. Exit status is non-zero if any column falls
+    below its recorded floor.
+
+What you should see
+    221 session directories unpacked, then the released classifier and
+    aggregator re-run over their raw captures and compared against the
+    shipped per-session table.
+
+        column       sessions identical    floor
+        n_records          220  (99.5%)      219
+        trk_hosts          220  (99.5%)      219
+        xsite              171  (77.4%)      165
+
+How this compares to the paper
+    Record counts and tracker-host counts come back identical on 220 of
+    221 sessions. The one exception is a duplicate directory. The archive
+    ships 221 directories for 220 sessions because P020/ArXiv--17 holds
+    both an abandoned 97-record run and the 194-record run that the
+    shipped table uses.
+
+    The cross-site column comes back identical on 171 of 221 because the
+    producer seeded its transition counter differently. In 49 of the 50
+    differing sessions the shipped column counts more human transitions
+    than this replay, so the human-versus-agent comparison built on it is
+    conservative rather than inflated. The single exception is that same
+    duplicate P020/ArXiv--17 directory, shipped 0 against replay 1.
+
+    Identifiers are deliberately not compared. Cookie headers are removed
+    from the released captures under the study's IRB protocol, so they
+    cannot be recomputed. That is a release decision, not a limit of the
+    instrument.
+
+    This does not show that the agent runners and the capture proxy behave
+    today as they did during collection, which ran against the live web
+    from March 22 to April 13, 2026 at roughly 500 GPU-hours plus paid API
+    usage. Showing that would need the web of that window. Those parts are
+    released for inspection under artifact/pipeline/ and artifact/agents/,
+    and artifact/INSTALL.md documents running one session end to end.
+
+Checking it yourself
+    The run performs the comparison itself. The script is
+    claims/07_pipeline/expected/compare_rebuild.py and it holds the floors
+    shown above. artifact/verify.py does not cover this claim.

@@ -1,0 +1,588 @@
+{
+  "per_cell_3p_hosts": {
+    "C0": {
+      "Amazon--32": {
+        "median": 27.0,
+        "std": 10.143416036468626,
+        "ci_lo": 26.0,
+        "ci_hi": 48.0,
+        "n": 3
+      },
+      "Booking--3": {
+        "median": 49.0,
+        "std": 0.816496580927726,
+        "ci_lo": 48.0,
+        "ci_hi": 50.0,
+        "n": 3
+      },
+      "Coursera--21": {
+        "median": 37.0,
+        "std": 0.4714045207910317,
+        "ci_lo": 37.0,
+        "ci_hi": 38.0,
+        "n": 3
+      },
+      "ArXiv--17": {
+        "median": 11.0,
+        "std": 0.0,
+        "ci_lo": 11.0,
+        "ci_hi": 11.0,
+        "n": 3
+      },
+      "Google_Search--28": {
+        "median": 10.0,
+        "std": 127.51544024156448,
+        "ci_lo": 0.0,
+        "ci_hi": 301.0,
+        "n": 4
+      },
+      "Google_Map--35": {
+        "median": 69.0,
+        "std": 30.912061651652344,
+        "ci_lo": 9.0,
+        "ci_hi": 79.0,
+        "n": 3
+      }
+    },
+    "C1": {
+      "Amazon--32": {
+        "median": 30.0,
+        "std": 0.0,
+        "ci_lo": 30.0,
+        "ci_hi": 30.0,
+        "n": 1
+      },
+      "Booking--3": {
+        "median": 47.0,
+        "std": 0.0,
+        "ci_lo": 47.0,
+        "ci_hi": 47.0,
+        "n": 1
+      },
+      "Coursera--21": {
+        "median": 37.0,
+        "std": 0.0,
+        "ci_lo": 37.0,
+        "ci_hi": 37.0,
+        "n": 1
+      },
+      "ArXiv--17": {
+        "median": 4.0,
+        "std": 0.0,
+        "ci_lo": 4.0,
+        "ci_hi": 4.0,
+        "n": 1
+      },
+      "Google_Search--28": {
+        "median": 16.0,
+        "std": 0.0,
+        "ci_lo": 16.0,
+        "ci_hi": 16.0,
+        "n": 1
+      },
+      "Google_Map--35": {
+        "median": 71.0,
+        "std": 0.0,
+        "ci_lo": 71.0,
+        "ci_hi": 71.0,
+        "n": 1
+      }
+    },
+    "C2": {
+      "Amazon--32": {
+        "median": 6.0,
+        "std": 1.699673171197595,
+        "ci_lo": 5.0,
+        "ci_hi": 9.0,
+        "n": 3
+      },
+      "Booking--3": {
+        "median": 41.0,
+        "std": 1.247219128924647,
+        "ci_lo": 39.0,
+        "ci_hi": 42.0,
+        "n": 3
+      },
+      "Coursera--21": {
+        "median": 37.0,
+        "std": 0.4714045207910317,
+        "ci_lo": 36.0,
+        "ci_hi": 37.0,
+        "n": 3
+      },
+      "ArXiv--17": {
+        "median": 5.0,
+        "std": 0.0,
+        "ci_lo": 5.0,
+        "ci_hi": 5.0,
+        "n": 3
+      },
+      "Google_Search--28": {
+        "median": 4.0,
+        "std": 0.4714045207910317,
+        "ci_lo": 3.0,
+        "ci_hi": 4.0,
+        "n": 3
+      },
+      "Google_Map--35": {
+        "median": 9.0,
+        "std": 0.0,
+        "ci_lo": 9.0,
+        "ci_hi": 9.0,
+        "n": 3
+      }
+    },
+    "C3": {
+      "Amazon--32": {
+        "median": 8.0,
+        "std": 0.0,
+        "ci_lo": 8.0,
+        "ci_hi": 8.0,
+        "n": 1
+      },
+      "Booking--3": {
+        "median": 28.0,
+        "std": 0.0,
+        "ci_lo": 28.0,
+        "ci_hi": 28.0,
+        "n": 1
+      },
+      "Coursera--21": {
+        "median": 36.0,
+        "std": 0.0,
+        "ci_lo": 36.0,
+        "ci_hi": 36.0,
+        "n": 1
+      },
+      "ArXiv--17": {
+        "median": 4.0,
+        "std": 0.0,
+        "ci_lo": 4.0,
+        "ci_hi": 4.0,
+        "n": 1
+      },
+      "Google_Search--28": {
+        "median": 2.0,
+        "std": 0.0,
+        "ci_lo": 2.0,
+        "ci_hi": 2.0,
+        "n": 1
+      },
+      "Google_Map--35": {
+        "median": 7.0,
+        "std": 0.0,
+        "ci_lo": 7.0,
+        "ci_hi": 7.0,
+        "n": 1
+      }
+    },
+    "C4": {
+      "Amazon--32": {
+        "median": 29.0,
+        "std": 0.0,
+        "ci_lo": 29.0,
+        "ci_hi": 29.0,
+        "n": 1
+      },
+      "Booking--3": {
+        "median": 47.0,
+        "std": 0.0,
+        "ci_lo": 47.0,
+        "ci_hi": 47.0,
+        "n": 1
+      },
+      "Coursera--21": {
+        "median": 8.0,
+        "std": 0.0,
+        "ci_lo": 8.0,
+        "ci_hi": 8.0,
+        "n": 1
+      },
+      "ArXiv--17": {
+        "median": 10.0,
+        "std": 0.0,
+        "ci_lo": 10.0,
+        "ci_hi": 10.0,
+        "n": 1
+      },
+      "Google_Search--28": {
+        "median": 24.0,
+        "std": 0.0,
+        "ci_lo": 24.0,
+        "ci_hi": 24.0,
+        "n": 1
+      },
+      "Google_Map--35": {
+        "median": 19.0,
+        "std": 0.0,
+        "ci_lo": 19.0,
+        "ci_hi": 19.0,
+        "n": 1
+      }
+    },
+    "C5": {
+      "Amazon--32": {
+        "median": 46.0,
+        "std": 0.0,
+        "ci_lo": 46.0,
+        "ci_hi": 46.0,
+        "n": 1
+      },
+      "Booking--3": {
+        "median": 52.0,
+        "std": 0.0,
+        "ci_lo": 52.0,
+        "ci_hi": 52.0,
+        "n": 1
+      },
+      "Coursera--21": {
+        "median": 38.0,
+        "std": 0.0,
+        "ci_lo": 38.0,
+        "ci_hi": 38.0,
+        "n": 1
+      },
+      "ArXiv--17": {
+        "median": 3.0,
+        "std": 0.0,
+        "ci_lo": 3.0,
+        "ci_hi": 3.0,
+        "n": 1
+      },
+      "Google_Search--28": {
+        "median": 11.0,
+        "std": 0.0,
+        "ci_lo": 11.0,
+        "ci_hi": 11.0,
+        "n": 1
+      },
+      "Google_Map--35": {
+        "median": 8.0,
+        "std": 0.0,
+        "ci_lo": 8.0,
+        "ci_hi": 8.0,
+        "n": 1
+      }
+    },
+    "C6": {
+      "Amazon--32": {
+        "median": 50.0,
+        "std": 0.0,
+        "ci_lo": 50.0,
+        "ci_hi": 50.0,
+        "n": 1
+      },
+      "Booking--3": {
+        "median": 45.0,
+        "std": 0.0,
+        "ci_lo": 45.0,
+        "ci_hi": 45.0,
+        "n": 1
+      },
+      "Coursera--21": {
+        "median": 8.0,
+        "std": 0.0,
+        "ci_lo": 8.0,
+        "ci_hi": 8.0,
+        "n": 1
+      },
+      "ArXiv--17": {
+        "median": 3.0,
+        "std": 0.0,
+        "ci_lo": 3.0,
+        "ci_hi": 3.0,
+        "n": 1
+      },
+      "Google_Search--28": {
+        "median": 297.0,
+        "std": 0.0,
+        "ci_lo": 297.0,
+        "ci_hi": 297.0,
+        "n": 1
+      },
+      "Google_Map--35": {
+        "median": 73.0,
+        "std": 0.0,
+        "ci_lo": 73.0,
+        "ci_hi": 73.0,
+        "n": 1
+      }
+    },
+    "C7": {
+      "Amazon--32": {
+        "median": 6.0,
+        "std": 1.4142135623730951,
+        "ci_lo": 6.0,
+        "ci_hi": 9.0,
+        "n": 3
+      },
+      "Booking--3": {
+        "median": 37.0,
+        "std": 1.699673171197595,
+        "ci_lo": 34.0,
+        "ci_hi": 38.0,
+        "n": 3
+      },
+      "Coursera--21": {
+        "median": 9.0,
+        "std": 0.4714045207910317,
+        "ci_lo": 8.0,
+        "ci_hi": 9.0,
+        "n": 3
+      },
+      "ArXiv--17": {
+        "median": 5.0,
+        "std": 0.4714045207910317,
+        "ci_lo": 4.0,
+        "ci_hi": 5.0,
+        "n": 3
+      },
+      "Google_Search--28": {
+        "median": 4.0,
+        "std": 0.0,
+        "ci_lo": 4.0,
+        "ci_hi": 4.0,
+        "n": 3
+      },
+      "Google_Map--35": {
+        "median": 9.0,
+        "std": 0.0,
+        "ci_lo": 9.0,
+        "ci_hi": 9.0,
+        "n": 3
+      }
+    },
+    "C8": {
+      "Amazon--32": {
+        "median": 5.0,
+        "std": 0.9428090415820634,
+        "ci_lo": 5.0,
+        "ci_hi": 7.0,
+        "n": 3
+      },
+      "Booking--3": {
+        "median": 34.0,
+        "std": 4.642796092394707,
+        "ci_lo": 26.0,
+        "ci_hi": 37.0,
+        "n": 3
+      },
+      "Coursera--21": {
+        "median": 8.0,
+        "std": 0.4714045207910317,
+        "ci_lo": 8.0,
+        "ci_hi": 9.0,
+        "n": 3
+      },
+      "ArXiv--17": {
+        "median": 4.0,
+        "std": 1.8856180831641267,
+        "ci_lo": 0.0,
+        "ci_hi": 4.0,
+        "n": 3
+      },
+      "Google_Search--28": {
+        "median": 2.0,
+        "std": 0.0,
+        "ci_lo": 2.0,
+        "ci_hi": 2.0,
+        "n": 3
+      },
+      "Google_Map--35": {
+        "median": 7.0,
+        "std": 0.0,
+        "ci_lo": 7.0,
+        "ci_hi": 7.0,
+        "n": 3
+      }
+    }
+  },
+  "cross_task_delta_pct": {
+    "C1": {
+      "mean_delta_pct": 1.0,
+      "median_delta_pct": 1.4,
+      "std_delta_pct": 36.0,
+      "n_tasks": 6,
+      "per_task_delta": [
+        11.1,
+        -4.1,
+        0.0,
+        -63.6,
+        60.0,
+        2.9
+      ]
+    },
+    "C2": {
+      "mean_delta_pct": -49.3,
+      "median_delta_pct": -57.3,
+      "std_delta_pct": 31.3,
+      "n_tasks": 6,
+      "per_task_delta": [
+        -77.8,
+        -16.3,
+        0.0,
+        -54.5,
+        -60.0,
+        -87.0
+      ]
+    },
+    "C3": {
+      "mean_delta_pct": -58.2,
+      "median_delta_pct": -67.0,
+      "std_delta_pct": 28.8,
+      "n_tasks": 6,
+      "per_task_delta": [
+        -70.4,
+        -42.9,
+        -2.7,
+        -63.6,
+        -80.0,
+        -89.9
+      ]
+    },
+    "C4": {
+      "mean_delta_pct": -2.8,
+      "median_delta_pct": -6.6,
+      "std_delta_pct": 72.0,
+      "n_tasks": 6,
+      "per_task_delta": [
+        7.4,
+        -4.1,
+        -78.4,
+        -9.1,
+        140.0,
+        -72.5
+      ]
+    },
+    "C5": {
+      "mean_delta_pct": -12.0,
+      "median_delta_pct": 4.4,
+      "std_delta_pct": 53.8,
+      "n_tasks": 6,
+      "per_task_delta": [
+        70.4,
+        6.1,
+        2.7,
+        -72.7,
+        10.0,
+        -88.4
+      ]
+    },
+    "C6": {
+      "mean_delta_pct": 467.0,
+      "median_delta_pct": -1.2,
+      "std_delta_pct": 1076.1,
+      "n_tasks": 6,
+      "per_task_delta": [
+        85.2,
+        -8.2,
+        -78.4,
+        -72.7,
+        2870.0,
+        5.8
+      ]
+    },
+    "C7": {
+      "mean_delta_pct": -63.2,
+      "median_delta_pct": -67.8,
+      "std_delta_pct": 20.5,
+      "n_tasks": 6,
+      "per_task_delta": [
+        -77.8,
+        -24.5,
+        -75.7,
+        -54.5,
+        -60.0,
+        -87.0
+      ]
+    },
+    "C8": {
+      "mean_delta_pct": -70.7,
+      "median_delta_pct": -79.2,
+      "std_delta_pct": 19.5,
+      "n_tasks": 6,
+      "per_task_delta": [
+        -81.5,
+        -30.6,
+        -78.4,
+        -63.6,
+        -80.0,
+        -89.9
+      ]
+    }
+  },
+  "task_success_rate": {
+    "C0": {
+      "Amazon--32": 0.67,
+      "Booking--3": 0.0,
+      "Coursera--21": 1.0,
+      "ArXiv--17": 1.0,
+      "Google_Search--28": 0.5,
+      "Google_Map--35": 0.33
+    },
+    "C1": {
+      "Amazon--32": 1.0,
+      "Booking--3": 0.0,
+      "Coursera--21": 1.0,
+      "ArXiv--17": 1.0,
+      "Google_Search--28": 1.0,
+      "Google_Map--35": 1.0
+    },
+    "C2": {
+      "Amazon--32": 1.0,
+      "Booking--3": 0.0,
+      "Coursera--21": 1.0,
+      "ArXiv--17": 0.0,
+      "Google_Search--28": 0.67,
+      "Google_Map--35": 0.33
+    },
+    "C3": {
+      "Amazon--32": 1.0,
+      "Booking--3": 0.0,
+      "Coursera--21": 1.0,
+      "ArXiv--17": 1.0,
+      "Google_Search--28": 0.0,
+      "Google_Map--35": 0.0
+    },
+    "C4": {
+      "Amazon--32": 1.0,
+      "Booking--3": 0.0,
+      "Coursera--21": 1.0,
+      "ArXiv--17": 1.0,
+      "Google_Search--28": 1.0,
+      "Google_Map--35": 1.0
+    },
+    "C5": {
+      "Amazon--32": 1.0,
+      "Booking--3": 0.0,
+      "Coursera--21": 1.0,
+      "ArXiv--17": 1.0,
+      "Google_Search--28": 1.0,
+      "Google_Map--35": 1.0
+    },
+    "C6": {
+      "Amazon--32": 0.0,
+      "Booking--3": 0.0,
+      "Coursera--21": 1.0,
+      "ArXiv--17": 0.0,
+      "Google_Search--28": 0.0,
+      "Google_Map--35": 1.0
+    },
+    "C7": {
+      "Amazon--32": 1.0,
+      "Booking--3": 0.0,
+      "Coursera--21": 1.0,
+      "ArXiv--17": 0.0,
+      "Google_Search--28": 0.33,
+      "Google_Map--35": 1.0
+    },
+    "C8": {
+      "Amazon--32": 1.0,
+      "Booking--3": 0.0,
+      "Coursera--21": 1.0,
+      "ArXiv--17": 0.67,
+      "Google_Search--28": 0.0,
+      "Google_Map--35": 0.0
+    }
+  }
+}

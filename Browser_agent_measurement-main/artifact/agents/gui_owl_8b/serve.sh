@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Serve GUI-Owl-1.5-8B-Think via vLLM at http://127.0.0.1:8004/v1.
+set -euo pipefail
+MODEL_DIR="${GUI_OWL_MODEL_DIR:-${HOME}/models/gui-owl-8b}"
+PORT="${GUI_OWL_VLLM_PORT:-8004}"
+
+exec vllm serve "${MODEL_DIR}" \
+  --port "${PORT}" \
+  --served-model-name "mPLUG/GUI-Owl-1.5-8B-Think" \
+  --max-model-len 65536 \
+  --gpu-memory-utilization 0.85 \
+  --tensor-parallel-size 1

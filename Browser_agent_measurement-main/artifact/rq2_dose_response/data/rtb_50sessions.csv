@@ -1,0 +1,51 @@
+session_key,task_id,rep,pseudo_id_count,rtb_requests,rtb_with_identifying_cookie
+agent:fara-7b|www.booking.com|rep=0|task=Booking--16,Booking--16,0,1302,189,110
+agent:fara-7b|www.allrecipes.com|rep=0|task=Allrecipes--43,Allrecipes--43,0,2252,983,688
+agent:fara-7b|www.allrecipes.com|rep=1|task=Allrecipes--39,Allrecipes--39,1,950,532,385
+agent:fara-7b|www.booking.com|rep=0|task=Booking--8,Booking--8,0,977,114,80
+agent:fara-7b|www.allrecipes.com|rep=0|task=Allrecipes--25,Allrecipes--25,0,1027,541,390
+agent:fara-7b|www.google.com|rep=0|task=Google Map--37,Google Map--37,0,1196,1,0
+agent:fara-7b|www.google.com|rep=1|task=Google Map--0,Google Map--0,1,1365,1,0
+agent:fara-7b|www.coursera.org|rep=1|task=Coursera--27,Coursera--27,1,698,28,23
+agent:fara-7b|www.google.com|rep=1|task=Google Search--25,Google Search--25,1,1445,451,378
+agent:fara-7b|www.coursera.org|rep=1|task=Coursera--2,Coursera--2,1,656,28,23
+agent:fara-7b|www.bbc.com|rep=0|task=BBC News--10,BBC News--10,0,780,0,0
+agent:fara-7b|dictionary.cambridge.org|rep=0|task=Cambridge Dictionary--25,Cambridge Dictionary--25,0,2106,951,707
+agent:fara-7b|dictionary.cambridge.org|rep=1|task=Cambridge Dictionary--7,Cambridge Dictionary--7,1,2112,870,696
+agent:fara-7b|www.allrecipes.com|rep=0|task=Allrecipes--3,Allrecipes--3,0,1392,679,431
+agent:fara-7b|www.booking.com|rep=1|task=Booking--2,Booking--2,1,1040,144,100
+agent:fara-7b|www.allrecipes.com|rep=0|task=Allrecipes--31,Allrecipes--31,0,1007,551,386
+agent:fara-7b|www.bbc.com|rep=1|task=BBC News--1,BBC News--1,1,724,0,0
+agent:fara-7b|dictionary.cambridge.org|rep=1|task=Cambridge Dictionary--1,Cambridge Dictionary--1,1,649,192,135
+agent:fara-7b|www.espn.com|rep=1|task=ESPN--7,ESPN--7,1,2247,1260,895
+agent:fara-7b|www.allrecipes.com|rep=1|task=Allrecipes--24,Allrecipes--24,1,689,330,234
+agent:fara-7b|www.google.com|rep=0|task=Google Map--32,Google Map--32,0,1065,4,0
+agent:fara-7b|www.google.com|rep=1|task=Google Map--19,Google Map--19,1,783,1,0
+agent:fara-7b|www.espn.com|rep=0|task=ESPN--17,ESPN--17,0,1039,448,282
+agent:fara-7b|www.allrecipes.com|rep=0|task=Allrecipes--16,Allrecipes--16,0,766,411,279
+agent:fara-7b|www.espn.com|rep=1|task=ESPN--24,ESPN--24,1,660,299,183
+agent:fara-7b|www.allrecipes.com|rep=0|task=Allrecipes--15,Allrecipes--15,0,938,535,372
+agent:fara-7b|www.wolframalpha.com|rep=1|task=Wolfram Alpha--25,Wolfram Alpha--25,1,3340,0,0
+agent:fara-7b|www.espn.com|rep=0|task=ESPN--37,ESPN--37,0,1145,269,164
+agent:fara-7b|www.allrecipes.com|rep=1|task=Allrecipes--32,Allrecipes--32,1,871,476,344
+agent:fara-7b|dictionary.cambridge.org|rep=0|task=Cambridge Dictionary--3,Cambridge Dictionary--3,0,1162,260,200
+agent:fara-7b|www.google.com|rep=1|task=Google Map--12,Google Map--12,1,1041,1,0
+agent:fara-7b|www.allrecipes.com|rep=1|task=Allrecipes--8,Allrecipes--8,1,874,459,321
+agent:fara-7b|www.allrecipes.com|rep=1|task=Allrecipes--13,Allrecipes--13,1,824,444,310
+agent:fara-7b|www.allrecipes.com|rep=1|task=Allrecipes--15,Allrecipes--15,1,1370,844,573
+agent:fara-7b|www.bbc.com|rep=0|task=BBC News--32,BBC News--32,0,844,0,0
+agent:fara-7b|dictionary.cambridge.org|rep=1|task=Cambridge Dictionary--26,Cambridge Dictionary--26,1,870,263,206
+agent:fara-7b|www.bbc.com|rep=0|task=BBC News--2,BBC News--2,0,646,0,0
+agent:fara-7b|www.allrecipes.com|rep=0|task=Allrecipes--23,Allrecipes--23,0,965,484,359
+agent:fara-7b|www.espn.com|rep=1|task=ESPN--2,ESPN--2,1,1775,478,293
+agent:fara-7b|dictionary.cambridge.org|rep=1|task=Cambridge Dictionary--10,Cambridge Dictionary--10,1,756,237,175
+agent:fara-7b|www.google.com|rep=1|task=Google Map--30,Google Map--30,1,711,2,0
+agent:fara-7b|www.amazon.com|rep=0|task=Amazon--22,Amazon--22,0,1273,58,52
+agent:fara-7b|www.booking.com|rep=1|task=Booking--7,Booking--7,1,825,116,80
+agent:fara-7b|dictionary.cambridge.org|rep=0|task=Cambridge Dictionary--38,Cambridge Dictionary--38,0,1479,563,450
+agent:fara-7b|www.bbc.com|rep=0|task=BBC News--29,BBC News--29,0,694,0,0
+agent:fara-7b|www.allrecipes.com|rep=0|task=Allrecipes--13,Allrecipes--13,0,922,515,348
+agent:fara-7b|www.booking.com|rep=0|task=Booking--9,Booking--9,0,644,124,85
+agent:fara-7b|www.allrecipes.com|rep=1|task=Allrecipes--23,Allrecipes--23,1,843,437,319
+agent:fara-7b|www.allrecipes.com|rep=0|task=Allrecipes--1,Allrecipes--1,0,675,327,224
+agent:fara-7b|www.amazon.com|rep=0|task=Amazon--21,Amazon--21,0,1072,49,43

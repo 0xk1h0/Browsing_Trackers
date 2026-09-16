@@ -1,0 +1,27 @@
+# Full end-to-end pipeline dependencies — required only for re-running the
+# raw measurement (GPU + mitmproxy + Playwright + vLLM). NOT required to
+# reproduce paper tables / figures from the shipped Tier-1 aggregates.
+#
+# See INSTALL.md for the end-to-end setup walkthrough.
+
+# Reproduction core
+-r requirements-repro.txt
+
+# HTTP capture proxy
+mitmproxy==11.0.2
+
+# Browser automation
+playwright==1.49.1
+
+# Local-LLM serving
+vllm==0.8.5
+
+# Hugging Face model fetcher / tokenizer
+huggingface_hub==0.27.1
+transformers==4.47.1
+
+# OpenAI client (for som-gpt-5 agent and the LLM-judge)
+openai==1.59.4
+
+# Agent harnesses
+browser-use==0.12.0

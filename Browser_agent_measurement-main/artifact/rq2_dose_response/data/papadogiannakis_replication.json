@@ -1,0 +1,51 @@
+{
+  "Browser-Use": {
+    "total": 89354,
+    "pre": 48051,
+    "post": 41303,
+    "pre_pct": 53.8,
+    "post_pct": 46.2
+  },
+  "Fara-7B": {
+    "total": 612458,
+    "pre": 439138,
+    "post": 173320,
+    "pre_pct": 71.7,
+    "post_pct": 28.3
+  },
+  "OpenCUA-7B": {
+    "total": 574288,
+    "pre": 367025,
+    "post": 207263,
+    "pre_pct": 63.9,
+    "post_pct": 36.1
+  },
+  "SoM-GPT-5": {
+    "total": 303071,
+    "pre": 248334,
+    "post": 54737,
+    "pre_pct": 81.9,
+    "post_pct": 18.1
+  },
+  "GUI-Owl-8B": {
+    "total": 198796,
+    "pre": 165960,
+    "post": 32836,
+    "pre_pct": 83.5,
+    "post_pct": 16.5
+  },
+  "UI-TARS": {
+    "total": 45771,
+    "pre": 39375,
+    "post": 6396,
+    "pre_pct": 86.0,
+    "post_pct": 14.0
+  },
+  "SoM-GLM": {
+    "total": 142331,
+    "pre": 116902,
+    "post": 25429,
+    "pre_pct": 82.1,
+    "post_pct": 17.9
+  }
+}

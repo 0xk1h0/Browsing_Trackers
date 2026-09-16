@@ -1,0 +1,173 @@
+{
+  "_meta": {
+    "description": "Canonical per-agent runtime configuration used in the paper (E1 643-task WebVoyager + Mind2Web sweeps). Step budgets and timeouts are the values reported in §4.",
+    "secret_handling": "All API keys are placeholders (e.g. ${OPENAI_API_KEY}). Set them in your shell environment before launching. Do NOT commit real keys into this artifact."
+  },
+  "agents": {
+    "fara-7b": {
+      "agent_type": "opensource",
+      "served_via": "local_vllm",
+      "vllm_endpoint": "http://127.0.0.1:5001/v1",
+      "served_model_name": "microsoft/Fara-7B",
+      "backbone": "Qwen2.5-VL-7B",
+      "params_active": "7B",
+      "step_budget": 30,
+      "session_timeout_s": 300,
+      "browser_engine": "chromium",
+      "action_paradigm": "browser-tooling",
+      "command_template": [
+        "fara-cli",
+        "--task", "{task}",
+        "--start_page", "{start_url}",
+        "--max_rounds", "30"
+      ],
+      "ablation_env_vars": {
+        "FARA_DISABLED_ACTIONS": "comma-separated list of action names to remove from the tool schema (RQ3)"
+      },
+      "upstream_repo": "https://github.com/microsoft/fara"
+    },
+    "browser-use": {
+      "agent_type": "opensource",
+      "served_via": "local_vllm",
+      "vllm_endpoint": "http://127.0.0.1:8002/v1",
+      "served_model_name": "browser-use/bu-30b-a3b-preview",
+      "backbone": "Qwen3-VL-MoE (30B-A3B preview)",
+      "params_active": "3B (30B total, MoE)",
+      "step_budget": 100,
+      "session_timeout_s": 500,
+      "browser_engine": "chromium",
+      "action_paradigm": "browser-tooling",
+      "command_template": [
+        "python", "${PROJECT_ROOT}/agents/browser_use/run_agent.py",
+        "--task", "{task}",
+        "--start-url", "{start_url}",
+        "--timeout-seconds", "500"
+      ],
+      "env": {
+        "BROWSER_USE_LLM": "browser-use/bu-30b-a3b-preview",
+        "BROWSER_USE_BASE_URL": "http://127.0.0.1:8002/v1",
+        "OPENAI_API_KEY": "dummy"
+      },
+      "ablation_env_vars": {
+        "BU_DISABLED_ACTIONS": "comma-separated list ({search,navigate}) — see rq3_ablation/interventions/schema_patches/"
+      },
+      "upstream_repo": "https://github.com/browser-use/browser-use (pip browser_use==0.12.0)"
+    },
+    "opencua-7b": {
+      "agent_type": "opensource",
+      "served_via": "local_vllm",
+      "vllm_endpoint": "http://127.0.0.1:8003/v1",
+      "served_model_name": "xlangai/OpenCUA-7B",
+      "backbone": "Qwen2.5-VL-7B",
+      "params_active": "7B",
+      "step_budget": 100,
+      "session_timeout_s": 600,
+      "browser_engine": "chromium",
+      "action_paradigm": "pixel-only-cua",
+      "command_template": [
+        "python", "${PROJECT_ROOT}/agents/opencua_7b/run_agent.py",
+        "--task", "{task}"
+      ],
+      "task_input": "file",
+      "env": {
+        "OPENCUA_BASE_URL": "http://127.0.0.1:8003/v1",
+        "OPENCUA_MODEL": "xlangai/OpenCUA-7B",
+        "OPENCUA_MAX_STEPS": "100"
+      },
+      "upstream_repo": "https://huggingface.co/xlangai/OpenCUA-7B"
+    },
+    "som-glm": {
+      "agent_type": "research",
+      "served_via": "local_vllm",
+      "vllm_endpoint": "http://127.0.0.1:8000/v1",
+      "served_model_name": "zai-org/GLM-4.1V-9B-Thinking",
+      "backbone": "GLM-4.1V-9B-Thinking",
+      "params_active": "9B",
+      "step_budget": 100,
+      "session_timeout_s": 600,
+      "browser_engine": "chromium",
+      "action_paradigm": "visible-element-som",
+      "command_template": [
+        "python", "${PROJECT_ROOT}/agents/som_glm/run_agent.py",
+        "--task", "{task}"
+      ],
+      "task_input": "file",
+      "env": {
+        "SOM_GLM_BASE_URL": "http://127.0.0.1:8000/v1",
+        "SOM_GLM_MODEL": "zai-org/GLM-4.1V-9B-Thinking",
+        "SOM_GLM_MAX_STEPS": "100"
+      },
+      "upstream_repo": "https://huggingface.co/zai-org/GLM-4.1V-9B-Thinking"
+    },
+    "som-gpt-5": {
+      "agent_type": "research",
+      "served_via": "openai_api",
+      "served_model_name": "gpt-5",
+      "step_budget": 100,
+      "session_timeout_s": 600,
+      "browser_engine": "chromium",
+      "action_paradigm": "visible-element-som",
+      "command_template": [
+        "python", "${PROJECT_ROOT}/agents/som_gpt5/run_agent.py",
+        "--task", "{task}"
+      ],
+      "task_input": "file",
+      "env": {
+        "SOM_GPT_BASE_URL": "https://api.openai.com/v1",
+        "SOM_GPT_MODEL": "gpt-5",
+        "SOM_GPT_TOOL_CHOICE": "required",
+        "SOM_GPT_REASONING_EFFORT": "minimal",
+        "SOM_GPT_MAX_STEPS": "100",
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}"
+      },
+      "platform_domains": ["api.openai.com"],
+      "upstream_repo": "OpenAI Responses API; tool schema in agents/som_gpt5/tools.json"
+    },
+    "ui-tars-1.5-7b": {
+      "agent_type": "opensource",
+      "served_via": "local_vllm",
+      "vllm_endpoint": "http://127.0.0.1:8001/v1",
+      "served_model_name": "ByteDance-Seed/UI-TARS-1.5-7B",
+      "backbone": "Qwen2.5-VL-7B",
+      "params_active": "7B",
+      "step_budget": 100,
+      "session_timeout_s": 600,
+      "browser_engine": "chromium",
+      "action_paradigm": "pixel-only-cua",
+      "command_template": [
+        "python", "${PROJECT_ROOT}/agents/ui_tars/run_agent.py",
+        "--task", "{task}"
+      ],
+      "task_input": "file",
+      "env": {
+        "UI_TARS_BASE_URL": "http://127.0.0.1:8001/v1",
+        "UI_TARS_MODEL": "ByteDance-Seed/UI-TARS-1.5-7B",
+        "UI_TARS_MAX_STEPS": "100"
+      },
+      "upstream_repo": "https://huggingface.co/ByteDance-Seed/UI-TARS-1.5-7B"
+    },
+    "gui-owl-8b": {
+      "agent_type": "opensource",
+      "served_via": "local_vllm",
+      "vllm_endpoint": "http://127.0.0.1:8004/v1",
+      "served_model_name": "mPLUG/GUI-Owl-1.5-8B-Think",
+      "backbone": "Qwen3-VL-8B",
+      "params_active": "8B",
+      "step_budget": 100,
+      "session_timeout_s": 600,
+      "browser_engine": "chromium",
+      "action_paradigm": "pixel-only-cua",
+      "command_template": [
+        "python", "${PROJECT_ROOT}/agents/gui_owl_8b/run_agent.py",
+        "--task", "{task}"
+      ],
+      "task_input": "file",
+      "env": {
+        "GUI_OWL_BASE_URL": "http://127.0.0.1:8004/v1",
+        "GUI_OWL_MODEL": "mPLUG/GUI-Owl-1.5-8B-Think",
+        "GUI_OWL_MAX_STEPS": "100"
+      },
+      "upstream_repo": "https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think"
+    }
+  }
+}

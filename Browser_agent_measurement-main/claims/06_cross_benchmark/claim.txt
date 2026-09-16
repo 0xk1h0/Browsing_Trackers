@@ -1,0 +1,52 @@
+CLAIM 6 - The same site-crossing pattern shows up on a second, unrelated
+set of tasks, so it is not an artifact of one benchmark.
+
+Paper
+    Section 8, the "Cross-benchmark" paragraph, and Table 7.
+
+Run
+    bash claims/06_cross_benchmark/run.sh
+
+    About 2 seconds. Recomputes both benchmark columns from the shipped
+    per-session records, 1,286 WebVoyager and 600 Mind2Web sessions per
+    agent.
+
+What you should see
+    Mean cross-site transitions per session and the shift between the two
+    benchmarks, next to what Table 7 prints.
+
+        agent          WebVoyager   Mind2Web     shift    paper
+        Browser-Use          3.70       5.30    +43.5%     +43%
+        Fara-7B              5.89       6.52    +10.6%     +11%
+        GUI-Owl-8B           0.82       1.19    +45.0%     +49%
+        OpenCUA-7B           7.67       6.86    -10.5%     -11%
+        SoM-GLM              0.67       2.68   +301.5%    +283%
+        SoM-GPT-5            1.67       2.11    +26.1%     +24%
+        UI-TARS              0.77       0.94    +21.5%     -28%
+
+How this compares to the paper
+    Five of the seven shifts match closely, including the sign of
+    OpenCUA-7B, the one agent the paper names as an exception. Two differ,
+    both because of which collection run a value came from rather than the
+    analysis. See artifact/CLAIMS.md, corrections C1 and C2.
+
+    UI-TARS. The paper prints -28%, which makes it a second exception and
+    supports the headline "5 of 7 agents traverse more on Mind2Web". This
+    run gives +21.5%, which makes it 6 of 7. The paper's UI-TARS WebVoyager
+    row came from a second, longer run than this artifact uses.
+
+    SoM-GLM. +301.5% here against +283% printed. Only the WebVoyager
+    denominator differs, and the paper's own Table 7 already prints 0.7 for
+    that agent, which is the value this artifact uses.
+
+    The second block, mean pseudonymous identifiers, matches Table 7 for
+    six of seven agents on the Mind2Web side. Browser-Use gives 594.8 here
+    against 591.8 printed. artifact/CLAIMS.md records that cell in the cross-benchmark table. The
+    Spearman rho of 0.571 in mind2web_spearman.json is an artifact-only
+    statistic and does not appear in the paper.
+
+Checking it yourself
+    Diff both files, or run python3 artifact/verify.py cross.
+
+        cd artifact/cross_benchmark
+        diff -r expected_outputs ../../claims/06_cross_benchmark/expected

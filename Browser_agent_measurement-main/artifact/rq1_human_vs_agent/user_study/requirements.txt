@@ -1,0 +1,11 @@
+# Minimum runtime requirements for the user-study artifact.
+#
+# The server side (proto/web_app.py + proto/spawn_session.py) and the
+# standalone client (client/study_client.py) both rely on these.
+#
+# Pinned to versions known to work with the published artifact;
+# any 3.x release on the same major branch is expected to work.
+aiohttp>=3.9,<4
+mitmproxy>=10,<13
+numpy>=1.24
+scipy>=1.10

@@ -1,0 +1,545 @@
+{
+  "ui-tars-1.5-7b": {
+    "attrition": {
+      "total": 1286,
+      "success": 562,
+      "failed": 724,
+      "attrition_rate": 0.5629860031104199,
+      "failure_categories": {
+        "none": 702,
+        "zero_requests": 22
+      }
+    },
+    "pair_stats": {
+      "total_pairs": 1286,
+      "both_succeed": 410,
+      "agent_only_succeed": 152,
+      "baseline_only_succeed": 516,
+      "neither_succeed": 208
+    },
+    "leakage_itt": {
+      "scripted_same_site": {
+        "pairs": 1286,
+        "classes": {
+          "pseudonymous_identifier": {
+            "mean_gap": 75.19129082426127,
+            "median_gap": 0.0,
+            "hl_gap": 19.0,
+            "mean_agent": 144.6547433903577,
+            "mean_base": 69.46345256609642,
+            "ci_lo": 2.0,
+            "ci_hi": 43.5,
+            "p_raw": 2.436897712424015e-08,
+            "r": 0.18603009463924444,
+            "n_pairs": 1286,
+            "p_holm": 4.87379542484803e-08
+          },
+          "context_signal": {
+            "mean_gap": 41.01555209953344,
+            "median_gap": -10.0,
+            "hl_gap": -20.0,
+            "mean_agent": 263.398133748056,
+            "mean_base": 222.38258164852255,
+            "ci_lo": -29.0,
+            "ci_hi": -9.0,
+            "p_raw": 2.1923834287669784e-12,
+            "r": -0.22683740133308333,
+            "n_pairs": 1286,
+            "p_holm": 8.769533715067914e-12
+          },
+          "behavior_signal": {
+            "mean_gap": 9.50388802488336,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 17.01244167962675,
+            "mean_base": 7.50855365474339,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": 3.795830089890508e-12,
+            "r": 0.31155561686669425,
+            "n_pairs": 1286,
+            "p_holm": 1.1387490269671524e-11
+          },
+          "device_network_signal": {
+            "mean_gap": 76.58398133748057,
+            "median_gap": -37.5,
+            "hl_gap": -76.0,
+            "mean_agent": 526.9214618973562,
+            "mean_base": 450.3374805598756,
+            "ci_lo": -93.0,
+            "ci_hi": -41.0,
+            "p_raw": 1.129738414252844e-24,
+            "r": -0.33050215737550476,
+            "n_pairs": 1286,
+            "p_holm": 5.64869207126422e-24
+          },
+          "browser_fingerprinting": {
+            "mean_gap": 3.0863141524105755,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 3.0863141524105755,
+            "mean_base": 0.0,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": 1.2755626111219532e-54,
+            "r": 1.0,
+            "n_pairs": 1286,
+            "p_holm": 7.65337566673172e-54
+          },
+          "direct_identifier": {
+            "mean_gap": 0.0,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 0.0,
+            "mean_base": 0.0,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": NaN,
+            "r": NaN,
+            "n_pairs": 1286,
+            "p_holm": NaN
+          }
+        }
+      },
+      "scripted_web_assisted": {
+        "pairs": 1286,
+        "classes": {
+          "pseudonymous_identifier": {
+            "mean_gap": 75.67884914463453,
+            "median_gap": 0.0,
+            "hl_gap": 21.0,
+            "mean_agent": 144.6547433903577,
+            "mean_base": 68.97589424572317,
+            "ci_lo": 2.0,
+            "ci_hi": 44.5,
+            "p_raw": 2.8939849569883897e-08,
+            "r": 0.1847988573027746,
+            "n_pairs": 1286,
+            "p_holm": 2.8939849569883897e-08
+          },
+          "context_signal": {
+            "mean_gap": 41.4556765163297,
+            "median_gap": -10.0,
+            "hl_gap": -17.5,
+            "mean_agent": 263.398133748056,
+            "mean_base": 221.94245723172628,
+            "ci_lo": -29.5,
+            "ci_hi": -8.5,
+            "p_raw": 9.046493915798651e-12,
+            "r": -0.21992259269482237,
+            "n_pairs": 1286,
+            "p_holm": 1.8092987831597303e-11
+          },
+          "behavior_signal": {
+            "mean_gap": 9.692068429237947,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 17.01244167962675,
+            "mean_base": 7.320373250388802,
+            "ci_lo": 0.0,
+            "ci_hi": 0.5,
+            "p_raw": 1.4862121093832827e-14,
+            "r": 0.34429695652372033,
+            "n_pairs": 1286,
+            "p_holm": 4.458636328149848e-14
+          },
+          "device_network_signal": {
+            "mean_gap": 76.06143079315707,
+            "median_gap": -38.5,
+            "hl_gap": -72.0,
+            "mean_agent": 526.9214618973562,
+            "mean_base": 450.8600311041991,
+            "ci_lo": -91.5,
+            "ci_hi": -40.5,
+            "p_raw": 5.159012341789581e-23,
+            "r": -0.3183871038235444,
+            "n_pairs": 1286,
+            "p_holm": 2.0636049367158324e-22
+          },
+          "browser_fingerprinting": {
+            "mean_gap": 3.0863141524105755,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 3.0863141524105755,
+            "mean_base": 0.0,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": 1.2755626111219532e-54,
+            "r": 1.0,
+            "n_pairs": 1286,
+            "p_holm": 7.65337566673172e-54
+          },
+          "direct_identifier": {
+            "mean_gap": 0.0,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 0.0,
+            "mean_base": 0.0,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": NaN,
+            "r": NaN,
+            "n_pairs": 1286,
+            "p_holm": NaN
+          }
+        }
+      }
+    },
+    "leakage_conditional": {
+      "pairs": 410,
+      "classes": {
+        "pseudonymous_identifier": {
+          "mean_gap": 75.66341463414633,
+          "median_gap": 82.5,
+          "hl_gap": 78.5,
+          "ci_lo": 67.5,
+          "ci_hi": 88.5,
+          "p_raw": 3.2237937131234462e-21,
+          "r": 0.5421760019461169,
+          "n_pairs": 410,
+          "p_holm": 1.2895174852493785e-20
+        },
+        "context_signal": {
+          "mean_gap": -28.958536585365852,
+          "median_gap": -24.0,
+          "hl_gap": -33.0,
+          "ci_lo": -40.5,
+          "ci_hi": -22.5,
+          "p_raw": 1.7300927566234637e-10,
+          "r": -0.3651418798477622,
+          "n_pairs": 410,
+          "p_holm": 5.190278269870391e-10
+        },
+        "behavior_signal": {
+          "mean_gap": 1.7073170731707317,
+          "median_gap": 0.0,
+          "hl_gap": 0.5,
+          "ci_lo": 0.0,
+          "ci_hi": 1.5,
+          "p_raw": 3.1276795194345504e-06,
+          "r": 0.3292219312325758,
+          "n_pairs": 410,
+          "p_holm": 6.255359038869101e-06
+        },
+        "device_network_signal": {
+          "mean_gap": -137.5609756097561,
+          "median_gap": -159.5,
+          "hl_gap": -135.5,
+          "ci_lo": -155.0,
+          "ci_hi": -115.5,
+          "p_raw": 4.3782894032575567e-35,
+          "r": -0.7051941081758006,
+          "n_pairs": 410,
+          "p_holm": 2.6269736419545338e-34
+        },
+        "browser_fingerprinting": {
+          "mean_gap": 2.3560975609756096,
+          "median_gap": 0.0,
+          "hl_gap": 1.0,
+          "ci_lo": 1.0,
+          "ci_hi": 1.0,
+          "p_raw": 1.421234059282868e-30,
+          "r": 1.0,
+          "n_pairs": 410,
+          "p_holm": 7.10617029641434e-30
+        },
+        "direct_identifier": {
+          "mean_gap": 0.0,
+          "median_gap": 0.0,
+          "hl_gap": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "p_raw": NaN,
+          "r": NaN,
+          "n_pairs": 410,
+          "p_holm": NaN
+        }
+      }
+    },
+    "discordant_pairs": {
+      "total_pairs": 1286,
+      "discordant": 476,
+      "discordant_pct": 37.01399688958009,
+      "discordant_by_class": {
+        "pseudonymous_identifier": 344,
+        "context_signal": 248,
+        "behavior_signal": 171,
+        "device_network_signal": 199,
+        "browser_fingerprinting": 216,
+        "direct_identifier": 0
+      }
+    }
+  },
+  "cua": {
+    "attrition": {
+      "total": 1286,
+      "success": 192,
+      "failed": 1094,
+      "attrition_rate": 0.8506998444790047,
+      "failure_categories": {
+        "none": 360,
+        "agent_task_failed": 711,
+        "timeout": 23
+      }
+    },
+    "pair_stats": {
+      "total_pairs": 1286,
+      "both_succeed": 72,
+      "agent_only_succeed": 120,
+      "baseline_only_succeed": 854,
+      "neither_succeed": 240
+    },
+    "leakage_itt": {
+      "scripted_same_site": {
+        "pairs": 1286,
+        "classes": {
+          "pseudonymous_identifier": {
+            "mean_gap": 50.22006220839813,
+            "median_gap": 13.0,
+            "hl_gap": 33.0,
+            "mean_agent": 119.68351477449455,
+            "mean_base": 69.46345256609642,
+            "ci_lo": 21.0,
+            "ci_hi": 42.5,
+            "p_raw": 5.675055430486347e-34,
+            "r": 0.41097622921252364,
+            "n_pairs": 1286,
+            "p_holm": 2.8375277152431738e-33
+          },
+          "context_signal": {
+            "mean_gap": 44.45800933125972,
+            "median_gap": 0.0,
+            "hl_gap": 11.0,
+            "mean_agent": 266.8405909797823,
+            "mean_base": 222.38258164852255,
+            "ci_lo": -6.5,
+            "ci_hi": 20.5,
+            "p_raw": 0.07381148076938192,
+            "r": 0.05955519596121368,
+            "n_pairs": 1286,
+            "p_holm": 0.22143444230814574
+          },
+          "behavior_signal": {
+            "mean_gap": 4.290824261275272,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 11.799377916018663,
+            "mean_base": 7.50855365474339,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": 0.0016833261772814861,
+            "r": 0.14585577024601415,
+            "n_pairs": 1286,
+            "p_holm": 0.0067333047091259444
+          },
+          "device_network_signal": {
+            "mean_gap": 86.9860031104199,
+            "median_gap": 0.0,
+            "hl_gap": 20.5,
+            "mean_agent": 537.3234836702954,
+            "mean_base": 450.3374805598756,
+            "ci_lo": -21.0,
+            "ci_hi": 36.5,
+            "p_raw": 0.3482466397793912,
+            "r": 0.031182117581108542,
+            "n_pairs": 1286,
+            "p_holm": 0.6964932795587824
+          },
+          "browser_fingerprinting": {
+            "mean_gap": 0.0,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 0.0,
+            "mean_base": 0.0,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": NaN,
+            "r": NaN,
+            "n_pairs": 1286,
+            "p_holm": NaN
+          },
+          "direct_identifier": {
+            "mean_gap": 2.2846034214618975,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 2.2846034214618975,
+            "mean_base": 0.0,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": 3.557570833568987e-52,
+            "r": 1.0,
+            "n_pairs": 1286,
+            "p_holm": 2.1345425001413922e-51
+          }
+        }
+      },
+      "scripted_web_assisted": {
+        "pairs": 1286,
+        "classes": {
+          "pseudonymous_identifier": {
+            "mean_gap": 50.707620528771386,
+            "median_gap": 13.0,
+            "hl_gap": 32.0,
+            "mean_agent": 119.68351477449455,
+            "mean_base": 68.97589424572317,
+            "ci_lo": 21.5,
+            "ci_hi": 43.0,
+            "p_raw": 5.494986442075115e-35,
+            "r": 0.4177414732014904,
+            "n_pairs": 1286,
+            "p_holm": 2.7474932210375577e-34
+          },
+          "context_signal": {
+            "mean_gap": 44.89813374805599,
+            "median_gap": 0.0,
+            "hl_gap": 10.5,
+            "mean_agent": 266.8405909797823,
+            "mean_base": 221.94245723172628,
+            "ci_lo": -6.5,
+            "ci_hi": 21.0,
+            "p_raw": 0.06529530411731982,
+            "r": 0.06142797668609492,
+            "n_pairs": 1286,
+            "p_holm": 0.19588591235195946
+          },
+          "behavior_signal": {
+            "mean_gap": 4.47900466562986,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 11.799377916018663,
+            "mean_base": 7.320373250388802,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": 0.000472225647526766,
+            "r": 0.16199005599385166,
+            "n_pairs": 1286,
+            "p_holm": 0.001888902590107064
+          },
+          "device_network_signal": {
+            "mean_gap": 86.46345256609642,
+            "median_gap": 0.0,
+            "hl_gap": 18.5,
+            "mean_agent": 537.3234836702954,
+            "mean_base": 450.8600311041991,
+            "ci_lo": -21.0,
+            "ci_hi": 37.0,
+            "p_raw": 0.32595119630204905,
+            "r": 0.032655007206442245,
+            "n_pairs": 1286,
+            "p_holm": 0.6519023926040981
+          },
+          "browser_fingerprinting": {
+            "mean_gap": 0.0,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 0.0,
+            "mean_base": 0.0,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": NaN,
+            "r": NaN,
+            "n_pairs": 1286,
+            "p_holm": NaN
+          },
+          "direct_identifier": {
+            "mean_gap": 2.2846034214618975,
+            "median_gap": 0.0,
+            "hl_gap": 0.0,
+            "mean_agent": 2.2846034214618975,
+            "mean_base": 0.0,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "p_raw": 3.557570833568987e-52,
+            "r": 1.0,
+            "n_pairs": 1286,
+            "p_holm": 2.1345425001413922e-51
+          }
+        }
+      }
+    },
+    "leakage_conditional": {
+      "pairs": 72,
+      "classes": {
+        "pseudonymous_identifier": {
+          "mean_gap": 5.097222222222222,
+          "median_gap": -16.0,
+          "hl_gap": -13.75,
+          "ci_lo": -35.5,
+          "ci_hi": 8.5,
+          "p_raw": 0.18182623617503557,
+          "r": -0.18231611893583724,
+          "n_pairs": 72,
+          "p_holm": 0.36365247235007114
+        },
+        "context_signal": {
+          "mean_gap": -89.34722222222223,
+          "median_gap": -23.0,
+          "hl_gap": -77.75,
+          "ci_lo": -160.0,
+          "ci_hi": -21.5,
+          "p_raw": 0.000599767711730927,
+          "r": -0.4653729071537291,
+          "n_pairs": 72,
+          "p_holm": 0.0026189477755025723
+        },
+        "behavior_signal": {
+          "mean_gap": -8.819444444444445,
+          "median_gap": 0.0,
+          "hl_gap": -1.0,
+          "ci_lo": -12.0,
+          "ci_hi": 0.0,
+          "p_raw": 0.003590085769475392,
+          "r": -0.5346153846153846,
+          "n_pairs": 72,
+          "p_holm": 0.010770257308426175
+        },
+        "device_network_signal": {
+          "mean_gap": -195.02777777777777,
+          "median_gap": -50.0,
+          "hl_gap": -185.5,
+          "ci_lo": -318.5,
+          "ci_hi": -49.0,
+          "p_raw": 0.0005237895551005145,
+          "r": -0.4703196347031963,
+          "n_pairs": 72,
+          "p_holm": 0.0026189477755025723
+        },
+        "browser_fingerprinting": {
+          "mean_gap": 0.0,
+          "median_gap": 0.0,
+          "hl_gap": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "p_raw": NaN,
+          "r": NaN,
+          "n_pairs": 72,
+          "p_holm": NaN
+        },
+        "direct_identifier": {
+          "mean_gap": 2.6527777777777777,
+          "median_gap": 0.0,
+          "hl_gap": 2.5,
+          "ci_lo": 0.5,
+          "ci_hi": 3.0,
+          "p_raw": 1.272427222418524e-06,
+          "r": 1.0,
+          "n_pairs": 72,
+          "p_holm": 7.634563334511144e-06
+        }
+      }
+    },
+    "discordant_pairs": {
+      "total_pairs": 1286,
+      "discordant": 667,
+      "discordant_pct": 51.86625194401244,
+      "discordant_by_class": {
+        "pseudonymous_identifier": 516,
+        "context_signal": 388,
+        "behavior_signal": 188,
+        "device_network_signal": 386,
+        "browser_fingerprinting": 0,
+        "direct_identifier": 273
+      }
+    }
+  }
+}

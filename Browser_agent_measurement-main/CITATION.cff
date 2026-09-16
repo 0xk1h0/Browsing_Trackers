@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: >-
+  If you use this artifact or its data, please cite the ACSAC 2026 paper below.
+title: >-
+  Brave New Browsing! Tracker Exposure under Browser-Agent Delegation (artifact)
+abstract: >-
+  Research artifact for the ACSAC 2026 paper "Brave New Browsing! Tracker
+  Exposure under Browser-Agent Delegation". Ships the measurement pipeline,
+  the released per-session data, and the analysis that regenerates the paper's
+  tables and figures: a matched human-versus-agent user study (22 participants,
+  10 WebVoyager tasks), a per-agent dose-response analysis over the 643-task
+  WebVoyager benchmark, a tool-schema and proxy action-space ablation, and a
+  cross-benchmark check on Online Mind2Web.
+type: software
+# MIT covers the code in this repository only. The filter-list snapshots under
+# artifact/pipeline/classifier/tracker_lists/ keep their upstream licenses; see
+# LICENSE and artifact/pipeline/classifier/tracker_lists/LICENSES.md.
+license: MIT
+repository-code: "https://github.com/0xk1h0/Browser_agent_measurement"
+keywords:
+  - browser agents
+  - LLM agents
+  - third-party tracking
+  - web measurement
+  - navigation policy
+  - privacy
+authors:
+  - family-names: Lee
+    given-names: Kiho
+  - family-names: Lim
+    given-names: Chaejin
+  - family-names: Kim
+    given-names: Eunsoo
+  - family-names: Jin
+    given-names: Seyoung
+  - family-names: Jin
+    given-names: Beomjin
+  - family-names: Kim
+    given-names: Hyoungshick
+preferred-citation:
+  type: conference-paper
+  title: "Brave New Browsing! Tracker Exposure under Browser-Agent Delegation"
+  authors:
+    - family-names: Lee
+      given-names: Kiho
+    - family-names: Lim
+      given-names: Chaejin
+    - family-names: Kim
+      given-names: Eunsoo
+    - family-names: Jin
+      given-names: Seyoung
+    - family-names: Jin
+      given-names: Beomjin
+    - family-names: Kim
+      given-names: Hyoungshick
+  collection-title: >-
+    Proceedings of the 42nd Annual Computer Security Applications Conference
+    (ACSAC 2026)
+  conference:
+    name: "Annual Computer Security Applications Conference (ACSAC 2026)"
+    city: Los Angeles
+    country: US
+  year: 2026
