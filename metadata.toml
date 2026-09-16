@@ -65,7 +65,7 @@ Delegating a task to a browser agent increases the number of distinct \
 third-party tracker hosts contacted, relative to a human performing the same \
 task from the same starting page (paper Section 6, Table 1).
 """
-script1 = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/claims/01_matched_exposure/run.sh"
+script1 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/01_matched_exposure/run.sh"
 expected1 = """
 Regenerates the per-task tracker-host matrix over 220 human and 140 agent \
 sessions. On nine of the ten tasks at least one agent exceeds the human median, \
@@ -81,7 +81,7 @@ that the human cohort rarely or never touches on the same tasks, specifically \
 cross-device ACR enrichers and native recommendation engines (paper abstract, \
 Section 6, Table 4).
 """
-script2 = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/claims/02_family_reach/run.sh"
+script2 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/02_family_reach/run.sh"
 expected2 = """
 cross_device_acr is touched by 0.000 percent of human sessions and 9.286 \
 percent of agent sessions (one-sided Fisher p = 3.26e-06); native_recommendation \
@@ -95,7 +95,7 @@ Tracker exposure scales with the agent's cross-site navigation: sessions with \
 more cross-site transitions transmit more pseudonymous identifiers, context \
 signals, and device or network signals (paper Section 7.1, Figure 3).
 """
-script3 = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/claims/03_dose_response/run.sh"
+script3 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/03_dose_response/run.sh"
 expected3 = """
 Median pseudonymous identifiers rise monotonically across cross-site transition \
 bins, from 19.5 in the zero-transition bin to 971 in the 11-or-more bin, with \
@@ -112,7 +112,7 @@ rather than by model identity alone: agents with explicit site-crossing \
 primitives cross more and are exposed more, and two agents sharing one backbone \
 differ by an order of magnitude (paper abstract, Section 7.2, Tables 2 and 3).
 """
-script4 = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/claims/04_architecture/run.sh"
+script4 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/04_architecture/run.sh"
 expected4 = """
 Recomputed from the shipped per-session records, mean cross-site transitions \
 range from 0.67 (SoM-GLM) to 7.67 (OpenCUA-7B) and mean pseudonymous \
@@ -129,7 +129,7 @@ Removing the agent's site-crossing primitives at both the tool-schema and proxy 
 layers, combined with CMP-CDN blocking, substantially reduces identifier \
 transmission (paper abstract, Section 8, Tables 5 and 6).
 """
-script5 = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/claims/05_ablation/run.sh"
+script5 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/05_ablation/run.sh"
 expected5 = """
 Median pseudonymous identifiers per session fall from 317 to 98 for Fara-7B \
 (69.1 percent, matching the paper's 69 percent) and from 346 to 54 for \
@@ -145,7 +145,7 @@ The per-agent exposure ordering is not an artifact of one benchmark: exposure \
 measured on WebVoyager carries over to Online Mind2Web (paper Section 8, \
 Table 7).
 """
-script6 = "https://github.com/0xk1h0/Browser_agent_measurement/blob/main/claims/06_cross_benchmark/run.sh"
+script6 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/06_cross_benchmark/run.sh"
 expected6 = """
 Per-agent cross-site transition means are recomputed on both benchmarks and the \
 shift between them reported. Five of the seven shifts reproduce the paper \

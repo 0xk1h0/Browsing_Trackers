@@ -362,7 +362,7 @@ repository, installs the four pinned dependencies, runs the reproduction, runs
 the verification, and prints the reproduced tables. A standard CPU runtime on
 the free tier is enough.
 
-https://colab.research.google.com/github/0xk1h0/Browser_agent_measurement/blob/main/artifact/notebooks/acsac_ae_colab.ipynb
+https://colab.research.google.com/github/0xk1h0/Browsing_Trackers/blob/main/artifact/notebooks/acsac_ae_colab.ipynb
 
 **Docker.** From the repository root:
 
