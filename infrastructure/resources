@@ -1,0 +1,59 @@
+Resource requirements for evaluating this artifact
+==================================================
+
+All values below were measured on a clean clone of the public repository
+using /usr/bin/time -v. They describe the reproduction path that evaluators
+are asked to run. They do NOT describe the original data collection, which is
+not part of the proposed evaluation (see "Not required" at the bottom).
+
+Compute
+-------
+CPU            Any x86-64 or ARM64 processor. Single core is sufficient;
+               the analyzers are not parallelized.
+GPU            None.
+Memory         Peak resident set size 430,768 kB (about 421 MB), reached by the
+               cross-benchmark module, which loads the per-session records of
+               both benchmarks. Per module: rq1 84 MB, rq2 302 MB, rq3 111 MB,
+               cross-benchmark 421 MB. Provision at least 1 GB of RAM.
+Disk           Working tree            62 MB
+               Git history             114 MB (only if cloned with history)
+               Python virtualenv      322 MB
+               Total, worst case      about 500 MB.
+               Claim 07 additionally unpacks the human-session archive into
+               a temporary directory of about 530 MB, removed on exit.
+Network        Required once, to clone the repository and to install the four
+               Python packages. The reproduction itself makes no network
+               calls, needs no API keys, and no proxy.
+
+Time
+----
+Environment setup      about 30 s (uv venv + uv pip install)
+Full reproduction       14 s measured wall clock for all four modules
+Verification            under 1 s
+Total                  well under 5 minutes including the clone.
+
+Software
+--------
+OS             Linux x86-64 (tested). macOS and Windows Subsystem for Linux
+               are expected to work; nothing in the reproduction path is
+               platform specific.
+Python         3.12 or newer. Verified on 3.12.3, 3.13.12 and 3.14.3.
+Packages       numpy 2.4.2, scipy 1.17.0, matplotlib 3.10.9, pandas 2.2.3
+               (pinned in artifact/requirements-repro.txt).
+Other          bash. Optionally uv, which the install script uses when present
+               and otherwise falls back to python3 -m venv and pip. On Debian
+               and Ubuntu the stock python3 lacks ensurepip, so without uv you
+               need the python3-venv package (sudo apt install python3-venv).
+               The Dockerfile and the Colab notebook need neither.
+               No compilers, no paid software, no license servers, no GUI.
+
+Not required for evaluation
+---------------------------
+The original measurement campaign ran between March 22 and April 13, 2026 and
+consumed approximately 500 GPU-hours across six locally served agents on
+NVIDIA RTX PRO 6000 Blackwell GPUs (96 GB VRAM each), plus paid OpenAI API
+usage for the seventh agent. It also measured the live web, which has changed
+since. That path is released for inspection and single-session demonstration
+under artifact/pipeline/, and its prerequisites are documented in
+artifact/INSTALL.md, but it is not reproducible in principle and is not part
+of the proposed evaluation.

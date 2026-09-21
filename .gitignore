@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtualenvs created by evaluators (INSTALL.md / REPRODUCE.sh)
+.venv/
+venv/
+
+# Per-module stamp written by REPRODUCE.sh, read by verify.py
+.reproduced
+
+# Editor / tooling scratch
+.omc/
+.ipynb_checkpoints/
+.scan_results/
+
+# OS
+.DS_Store

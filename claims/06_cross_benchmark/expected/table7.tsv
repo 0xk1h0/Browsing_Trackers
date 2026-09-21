@@ -1,0 +1,8 @@
+agent	n_sessions	webvoyager_mean_xsite	mind2web_mean_xsite	xsite_delta_pct	webvoyager_mean_pseudo	mind2web_mean_pseudo	delta_pct
+Browser-Use	600	3.7	5.3	43.5	400.2	594.8	48.6
+Fara-7B	600	5.89	6.52	10.6	447.0	446.2	-0.2
+GUI-Owl-8B	600	0.82	1.19	45.0	118.0	167.9	42.3
+OpenCUA-7B	600	7.67	6.86	-10.5	736.1	539.3	-26.7
+SoM-GLM	600	0.67	2.68	301.5	100.9	182.4	80.8
+SoM-GPT-5	600	1.67	2.11	26.1	179.9	127.3	-29.2
+UI-TARS	600	0.77	0.94	21.5	123.7	75.9	-38.7

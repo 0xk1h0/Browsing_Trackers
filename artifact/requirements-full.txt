@@ -1,0 +1,30 @@
+# Collection-pipeline dependencies: the mitmproxy capture addon, the
+# Playwright-driven agent runners, the Browser-Use harness and the OpenAI
+# client. Needed only to re-run a live collection (see INSTALL.md).
+# Reproducing the paper's tables and figures from the shipped per-session data
+# needs only requirements-repro.txt.
+#
+# Model serving is a separate environment: requirements-serve.txt. The vLLM
+# stack and the Browser-Use harness pin incompatible versions of shared
+# libraries, so they were never one resolution and are not one here either.
+#
+# mitmproxy, browser-use and openai are the versions installed in the authors'
+# collection environment before the collection window (22 March to 13 April
+# 2026). mitmproxy 12 requires Python 3.13; on 3.12 the 11.0.2 release the
+# same lock file records is used instead. Resolves on Python 3.12 and 3.13.
+
+# Reproduction core
+-r requirements-repro.txt
+
+# HTTP capture proxy
+mitmproxy==11.0.2; python_version < "3.13"
+mitmproxy==12.2.1; python_version >= "3.13"
+
+# Browser automation used by the OpenCUA, SoM and UI-TARS runners
+playwright==1.49.1
+
+# OpenAI client (SoM-GPT-5 agent and the LLM judge)
+openai==2.16.0
+
+# Browser-Use harness
+browser-use==0.12.0

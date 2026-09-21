@@ -1,0 +1,9 @@
+agent	n_sessions	n_with_cmp	explicit_accept	explicit_reject	accept_pct_of_decided
+Browser-Use	311	87	89	0	100.0
+Fara-7B	1277	276	2	1	66.66666666666666
+OpenCUA-7B	1285	259	123	5	96.09375
+SoM-GPT-5	1286	259	0	0	nan
+GUI-Owl-8B	1285	256	0	0	nan
+UI-TARS	1267	133	141	0	100.0
+SoM-GLM	1273	247	0	0	nan
+AGGREGATE	7984	1517	355	6	98.3

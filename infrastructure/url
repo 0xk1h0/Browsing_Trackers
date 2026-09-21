@@ -1,0 +1,13 @@
+https://colab.research.google.com/github/0xk1h0/Browsing_Trackers/blob/main/artifact/notebooks/acsac_ae_colab.ipynb
+
+Public research infrastructure: Google Colab (free tier is sufficient).
+
+The notebook above clones this repository, installs the four pinned Python
+dependencies, runs the full reproduction, and runs the verification harness.
+No GPU runtime is needed; select a standard CPU runtime.
+
+Alternative public infrastructure: any container host (Chameleon, CloudLab,
+or a local Docker daemon) can build and run the Dockerfile at
+the repository root, which performs the same steps.
+
+See infrastructure/resources for the measured resource envelope.

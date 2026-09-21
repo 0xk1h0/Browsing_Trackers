@@ -1,0 +1,8 @@
+agent	n_sessions	duration_mean	duration_med	xsite_mean	xsite_med	offsite_pct	trk_hosts_mean	trk_hosts_med	pseudo_mean	pseudo_med	fp_pct	op_succ_pct
+OpenCUA-7B	1286	206.9	117.0	7.7	1.0	54.4	52.9	10.0	736.1	198.0	39.3	58.9
+Fara-7B	1286	99.7	64.2	5.9	2.0	76.4	58.8	14.0	447.0	292.0	46.0	92.5
+Browser-Use	1286	202.1	98.1	3.7	1.0	58.6	40.2	13.0	400.2	220.0	44.0	37.2
+SoM-GPT-5	1286	33.8	31.8	1.7	1.0	58.5	32.2	10.0	179.9	108.5	24.7	74.2
+UI-TARS	1286	126.3	26.1	0.8	1.0	52.7	32.1	10.0	123.7	43.0	25.2	45.9
+GUI-Owl-8B	1286	251.3	129.7	0.8	1.0	60.0	32.0	10.0	118.0	40.0	22.6	40.5
+SoM-GLM	1286	116.3	113.0	0.7	1.0	53.1	31.8	10.0	100.9	40.0	21.5	46.3

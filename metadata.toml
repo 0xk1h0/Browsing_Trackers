@@ -1,0 +1,218 @@
+badge = "r"
+artifact_url = "https://github.com/0xk1h0/Browsing_Trackers"
+cd = "b"
+
+citation = """
+@inproceedings{lee2026bravenewbrowsing,
+  title     = {Brave New Browsing! Tracker Exposure under Browser-Agent Delegation},
+  author    = {Lee, Kiho and Lim, Chaejin and Kim, Eunsoo and Jin, Seyoung and Jin, Beomjin and Kim, Hyoungshick},
+  booktitle = {Proceedings of the 42nd Annual Computer Security Applications Conference (ACSAC)},
+  address   = {Los Angeles, CA, USA},
+  year      = {2026}
+}
+"""
+
+license_url = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/license.txt"
+
+# ---------------------------------------------------------------------------
+# Infrastructure (public)
+# ---------------------------------------------------------------------------
+infrastructure_url = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/infrastructure/url"
+infrastructure_resources = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/infrastructure/resources"
+infrastructure_allocation_file = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/infrastructure/allocation"
+infrastructure_allocation = """
+No allocation or reservation is needed. The reproduction runs on the Google \
+Colab free tier with a standard CPU runtime; the notebook linked from \
+infrastructure/url clones the repository, installs four pinned Python packages, \
+runs the full reproduction, and runs the verification harness. Evaluators who \
+prefer a container can build the Dockerfile at the repository root instead. Peak memory is about \
+420 MB and the whole reproduction takes about fifteen seconds.
+"""
+
+install_script = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/install.sh"
+
+use = """
+See use.txt in the repository root. In short: this artifact is for reproducing \
+the paper's analysis, for reusing the measurement instrument against other \
+agents or task suites, and for re-aggregating the released per-session data. \
+It is NOT suitable for re-running the original live-web collection (the web \
+has changed since March and April 2026 and the campaign cost roughly 500 \
+GPU-hours plus paid API usage), for reconstructing individual browsing \
+behaviour (raw flows and cookie values are withheld under the IRB protocol and \
+cookie values appear only as salted hashes), or for population-level \
+generalization (22 purposively recruited participants, 10 purposively \
+stratified tasks).
+"""
+
+destructive = """
+The reproduction path is non-destructive. It writes outputs only inside the \
+artifact directory, installs no system packages, modifies no system trust \
+store, and makes no network requests once dependencies are installed.
+
+The full collection path, which is NOT part of the proposed evaluation, does \
+install a local certificate authority so that mitmproxy can terminate TLS, and \
+launches browsers that fetch live third-party content. Do not run it on a \
+machine whose trust store matters to you, and do not point it at sites you are \
+not authorized to measure. Prerequisites and cleanup are documented in \
+artifact/INSTALL.md.
+"""
+
+# ---------------------------------------------------------------------------
+# Claims
+# ---------------------------------------------------------------------------
+claim1 = """
+Delegating a task to a browser agent increases the number of distinct \
+third-party tracker hosts contacted, relative to a human performing the same \
+task from the same starting page (paper Section 6, Table 1).
+"""
+script1 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/01_matched_exposure/run.sh"
+expected1 = """
+Regenerates the per-task tracker-host matrix over 220 human and 140 agent \
+sessions. On nine of the ten tasks at least one agent exceeds the human median, \
+and on five of them all seven do, most sharply on \
+commerce tasks (Amazon--32: human 5, agents 27 to 52). One task runs the other \
+way and is reproduced unchanged (Google Search--28: human 116, agents 4 to 26). \
+Reference output: claims/01_matched_exposure/expected/table1_trk_hosts.tsv
+"""
+
+claim2 = """
+Agents do not merely contact more trackers; they reach tracker service families \
+that the human cohort rarely or never touches on the same tasks, specifically \
+cross-device ACR enrichers and native recommendation engines (paper abstract, \
+Section 6, Table 4).
+"""
+script2 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/02_family_reach/run.sh"
+expected2 = """
+cross_device_acr is touched by 0.000 percent of human sessions and 9.286 \
+percent of agent sessions (one-sided Fisher p = 3.26e-06); native_recommendation \
+by 1.364 percent and 9.286 percent (p = 5.26e-04). These are the values the \
+abstract rounds to 0 vs 9.3 percent and 1.4 vs 9.3 percent. Reference output: \
+claims/02_family_reach/expected/table4_family_composition.tsv
+"""
+
+claim3 = """
+Tracker exposure scales with the agent's cross-site navigation: sessions with \
+more cross-site transitions transmit more pseudonymous identifiers, context \
+signals, and device or network signals (paper Section 7.1, Figure 3).
+"""
+script3 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/03_dose_response/run.sh"
+expected3 = """
+Median pseudonymous identifiers rise monotonically across cross-site transition \
+bins, from 19.5 in the zero-transition bin to 971 in the 11-or-more bin, with \
+context signals 79 to 1,903.5 and device or network signals 188 to 4,275.5. \
+These are the values the paper quotes in Section 7.1. The bins are recomputed \
+from the shipped per-session records over the paper's pool of seven agents and \
+9,002 sessions. Reference output: \
+claims/03_dose_response/expected/table3.tsv
+"""
+
+claim4 = """
+Exposure is shaped by the agent's action-space architecture and planning loop \
+rather than by model identity alone: agents with explicit site-crossing \
+primitives cross more and are exposed more, and two agents sharing one backbone \
+differ by an order of magnitude (paper abstract, Section 7.2, Tables 2 and 3).
+"""
+script4 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/04_architecture/run.sh"
+expected4 = """
+Recomputed from the shipped per-session records, mean cross-site transitions \
+range from 0.67 (SoM-GLM) to 7.67 (OpenCUA-7B) and mean pseudonymous \
+identifiers from 100.9 to 736.1. UI-TARS and Fara-7B share the Qwen2.5-VL \
+backbone yet differ by roughly an order of magnitude on both. Two rows of the \
+paper's printed Table 2 do not match the shipped data; claim.txt and CLAIMS.md \
+state the printed value, the reproduced value, and the camera-ready correction. \
+Independent recomputation: \
+claims/04_architecture/expected/recompute_table2.py
+"""
+
+claim5 = """
+Removing the agent's site-crossing primitives at both the tool-schema and proxy \
+layers, combined with CMP-CDN blocking, substantially reduces identifier \
+transmission (paper abstract, Section 8, Tables 5 and 6).
+"""
+script5 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/05_ablation/run.sh"
+expected5 = """
+Median pseudonymous identifiers per session fall from 317 to 98 for Fara-7B \
+(69.1 percent, matching the paper's 69 percent) and from 346 to 54 for \
+Browser-Use. The negative-control condition that removes a non-crossing \
+primitive leaves exposure essentially unchanged. The Browser-Use baseline \
+printed in the paper differs from the shipped data and the camera-ready \
+correction is recorded in CLAIMS.md. Reference output: \
+claims/05_ablation/expected/full_metrics_per_cell.csv
+"""
+
+claim6 = """
+The per-agent exposure ordering is not an artifact of one benchmark: exposure \
+measured on WebVoyager carries over to Online Mind2Web (paper Section 8, \
+Table 7).
+"""
+script6 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/06_cross_benchmark/run.sh"
+expected6 = """
+Per-agent cross-site transition means are recomputed on both benchmarks and the \
+shift between them reported. Five of the seven shifts reproduce the paper \
+closely: Browser-Use +43.5% against a printed +43%, Fara-7B +10.6% against \
++11%, SoM-GPT-5 +26.1% against +24%, GUI-Owl-8B +45.0% against +49%, and \
+OpenCUA-7B -10.5% against -11%, including the direction of the exception the \
+paper names. The SoM-GLM and UI-TARS rows differ; both are itemized in \
+artifact/CLAIMS.md as corrections C1 and C2. Reference outputs: \
+claims/06_cross_benchmark/expected/table7.tsv and mind2web_spearman.json
+"""
+
+claim7 = """
+The measurement instrument released here is the one that produced the paper's \
+data: running the released tracker classifier and per-session aggregator over \
+the released raw session captures regenerates the published per-session metrics \
+(paper Section 4.2, Appendix A).
+"""
+script7 = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/claims/07_pipeline/run.sh"
+expected7 = """
+Unpacks the 221 released human session bundles and re-runs the classifier and \
+aggregator over their raw captures, with no GPU, proxy, model, or network. \
+Per-session record counts and unique tracker-host counts come back identical on \
+220 of 221 sessions; the one exception is a duplicate session directory the \
+archive ships. Cross-site transition counts reproduce on 171 of 221, and in \
+49 of the 50 differing sessions the shipped value is the larger one, so the \
+human-versus-agent comparison is conservative. Pseudonymous identifiers are not \
+compared because Cookie headers are removed from released captures under the \
+IRB protocol. Exit status is non-zero if agreement falls below the recorded \
+floor.
+"""
+
+# ---------------------------------------------------------------------------
+# Requirements
+# ---------------------------------------------------------------------------
+hw = """
+Any x86-64 or ARM64 machine with one CPU core, 1 GB of RAM and about 500 MB of
+disk (62 MB working tree, 315 MB Python virtual environment, 114 MB git history
+if cloned with history). Peak resident memory during the reproduction is 431 MB,
+measured in the cross-benchmark module. The full reproduction takes about 15
+seconds. The evaluated path runs on CPU; the Colab free tier or the Dockerfile
+at the repository root is sufficient. The collection pipeline is included for
+inspection; running it again would need an NVIDIA GPU with at least 24 GB of
+VRAM (the authors used six RTX PRO 6000).
+"""
+
+sw = """
+Linux x86-64 (tested on Ubuntu 24.04; macOS and WSL are expected to work), bash,
+and Python 3.12, 3.13 or 3.14 (all three verified). install.sh uses uv when
+present and python3 -m venv with pip otherwise; on Debian and Ubuntu that needs
+the python3-venv package. Four pinned Python packages: numpy 2.4.2, scipy
+1.17.0, matplotlib 3.10.9, pandas 2.2.3. Docker (python:3.12-slim image, offline
+at run time) or Google Colab work as alternatives to a local install.
+"""
+
+api = """
+No API keys are required for the evaluated reproduction path. It makes no
+network requests once dependencies are installed.
+The original collection used the OpenAI API for one of the seven agents; that
+path is released for inspection only and is not part of the evaluation.
+"""
+
+gui = "n"
+
+# ---------------------------------------------------------------------------
+# Data artifact
+# ---------------------------------------------------------------------------
+provenance = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/artifact/docs/PROVENANCE.md"
+ethics = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/artifact/docs/ETHICS.md"
+
+readme = "https://github.com/0xk1h0/Browsing_Trackers/blob/main/README.txt"

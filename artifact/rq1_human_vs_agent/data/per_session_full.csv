@@ -1,0 +1,361 @@
+cohort,agent,id,task_id,n_records,xsite,trk_hosts,pseudo,context,device_net,behavior,direct_id,fp_apis
+human,human,P001,Amazon--32,1119,0,5,425,1166,3756,705,0,0
+human,human,P001,Apple--29,284,0,2,245,264,785,7,0,0
+human,human,P001,ArXiv--17,162,0,0,14,104,371,0,0,0
+human,human,P001,Booking--3,1748,1,35,824,1967,5300,392,0,4
+human,human,P001,Coursera--21,1062,1,27,531,1146,3081,34,0,0
+human,human,P001,GitHub--35,412,0,2,91,351,1128,0,0,0
+human,human,P001,Google Flights--34,343,0,2,189,300,980,0,0,0
+human,human,P001,Google Map--35,1405,0,3,1153,1359,3389,36,0,71
+human,human,P001,Google Search--28,1699,2,135,739,1876,5120,139,0,0
+human,human,P001,Huggingface--14,167,0,0,30,126,461,0,0,4
+human,human,P002,Amazon--32,1099,0,5,430,1193,3733,751,0,0
+human,human,P002,Apple--29,243,1,2,185,210,626,13,0,0
+human,human,P002,ArXiv--17,79,0,0,9,73,226,0,0,0
+human,human,P002,Booking--3,2237,1,35,1151,2570,6852,546,0,4
+human,human,P002,Coursera--21,1417,1,27,848,1612,4117,47,0,0
+human,human,P002,GitHub--35,420,1,2,103,359,1151,0,0,0
+human,human,P002,Google Flights--34,771,1,19,526,724,2289,5,0,10
+human,human,P002,Google Map--35,1113,0,3,972,1063,2569,37,0,40
+human,human,P002,Google Search--28,1010,3,127,473,1126,3030,49,0,4
+human,human,P002,Huggingface--14,154,0,0,38,126,448,0,0,4
+human,human,P003,Amazon--32,1154,0,5,368,1236,3739,564,0,2
+human,human,P003,Apple--29,363,0,3,211,357,990,30,0,2
+human,human,P003,ArXiv--17,132,0,0,13,79,289,0,0,0
+human,human,P003,Booking--3,948,0,31,466,1083,2873,204,0,0
+human,human,P003,Coursera--21,1024,1,27,514,1110,2968,35,0,0
+human,human,P003,GitHub--35,358,1,2,85,345,1061,0,0,0
+human,human,P003,Google Flights--34,317,0,2,161,267,899,0,0,0
+human,human,P003,Google Map--35,1174,0,3,977,1122,2779,38,0,38
+human,human,P003,Google Search--28,984,3,122,498,1086,3007,41,0,0
+human,human,P003,Huggingface--14,153,0,0,36,126,446,0,0,4
+human,human,P004,Amazon--32,1254,0,4,637,1465,4390,1047,0,0
+human,human,P004,Apple--29,310,0,2,244,261,821,7,0,0
+human,human,P004,ArXiv--17,132,0,0,11,77,287,0,0,0
+human,human,P004,Booking--3,1748,0,32,848,2021,5347,498,0,4
+human,human,P004,Coursera--21,986,1,27,483,1071,2852,36,0,0
+human,human,P004,GitHub--35,454,1,2,116,393,1254,0,0,0
+human,human,P004,Google Flights--34,688,5,9,383,679,2048,3,0,7
+human,human,P004,Google Map--35,713,0,3,521,673,1812,14,0,80
+human,human,P004,Google Search--28,811,1,112,381,872,2384,43,0,0
+human,human,P004,Huggingface--14,211,0,0,39,134,523,0,0,4
+human,human,P005,Amazon--32,993,0,4,385,1033,3293,587,0,0
+human,human,P005,Apple--29,533,2,8,431,464,1475,28,0,0
+human,human,P005,ArXiv--17,241,0,0,11,183,609,0,0,0
+human,human,P005,Booking--3,1675,1,35,789,1879,5080,384,0,4
+human,human,P005,Coursera--21,1175,1,27,742,1308,3383,33,0,0
+human,human,P005,GitHub--35,1289,4,11,510,1150,3564,11,0,0
+human,human,P005,Google Flights--34,1914,1,30,1331,1832,5721,46,0,10
+human,human,P005,Google Map--35,811,0,3,576,759,2103,20,0,72
+human,human,P005,Google Search--28,1346,4,122,729,1394,3986,64,0,4
+human,human,P005,Huggingface--14,499,1,5,271,361,1343,14,0,4
+human,human,P006,Amazon--32,870,0,6,236,960,2868,383,0,0
+human,human,P006,Apple--29,492,3,7,344,408,1335,24,0,0
+human,human,P006,ArXiv--17,72,0,0,0,19,110,0,0,0
+human,human,P006,Booking--3,996,1,32,459,1160,2965,257,0,0
+human,human,P006,Coursera--21,966,1,27,528,1073,2782,33,0,0
+human,human,P006,GitHub--35,352,0,2,84,339,1043,0,0,0
+human,human,P006,Google Flights--34,245,0,2,129,215,715,0,0,0
+human,human,P006,Google Map--35,884,0,3,738,878,2250,23,0,45
+human,human,P006,Google Search--28,793,2,95,397,892,2427,39,0,0
+human,human,P006,Huggingface--14,151,0,0,37,124,440,0,0,4
+human,human,P007,Amazon--32,1060,0,4,416,1108,3509,626,0,0
+human,human,P007,Apple--29,379,0,2,324,353,1039,23,0,0
+human,human,P007,ArXiv--17,120,0,4,20,64,245,0,0,0
+human,human,P007,Booking--3,1667,1,32,791,1909,5073,437,0,4
+human,human,P007,Coursera--21,894,1,27,447,977,2576,33,0,0
+human,human,P007,GitHub--35,418,0,3,112,369,1171,0,0,0
+human,human,P007,Google Flights--34,331,0,2,177,286,952,0,0,0
+human,human,P007,Google Map--35,748,0,3,602,742,1916,15,0,106
+human,human,P007,Google Search--28,1005,2,134,482,1128,3069,50,0,4
+human,human,P007,Huggingface--14,158,0,0,29,131,461,0,0,4
+human,human,P008,Amazon--32,906,0,4,358,1063,3081,612,0,0
+human,human,P008,Apple--29,282,1,2,225,245,747,14,0,5
+human,human,P008,ArXiv--17,369,5,26,94,303,995,9,0,0
+human,human,P008,Booking--3,2576,0,35,1130,2882,7802,421,0,6
+human,human,P008,Coursera--21,1741,1,27,899,2020,5117,67,0,0
+human,human,P008,GitHub--35,764,1,2,206,699,2180,0,0,0
+human,human,P008,Google Flights--34,318,0,2,167,271,908,0,0,0
+human,human,P008,Google Map--35,769,0,3,599,739,1961,17,0,80
+human,human,P008,Google Search--28,924,2,123,462,1092,2858,76,0,0
+human,human,P008,Huggingface--14,177,0,0,26,127,472,0,0,4
+human,human,P009,Amazon--32,920,0,5,298,1000,3016,491,0,0
+human,human,P009,Apple--29,222,0,2,170,182,573,9,0,0
+human,human,P009,ArXiv--17,167,0,1,10,107,375,0,0,0
+human,human,P009,Booking--3,1509,0,32,726,1749,4619,448,0,2
+human,human,P009,Coursera--21,1041,1,27,525,1126,3017,34,0,0
+human,human,P009,GitHub--35,352,1,2,85,339,1043,0,0,0
+human,human,P009,Google Flights--34,299,0,2,148,253,849,0,0,0
+human,human,P009,Google Map--35,678,0,3,540,672,1739,8,0,82
+human,human,P009,Google Search--28,277,1,9,156,278,829,4,0,0
+human,human,P009,Huggingface--14,158,0,0,32,130,460,0,0,4
+human,human,P010,Amazon--32,934,0,5,332,1003,3092,537,0,0
+human,human,P010,Apple--29,377,0,2,320,341,1031,12,0,0
+human,human,P010,ArXiv--17,286,0,0,15,209,719,0,0,0
+human,human,P010,Booking--3,1867,0,34,911,2102,5657,392,0,4
+human,human,P010,Coursera--21,1160,1,27,624,1307,3373,47,0,0
+human,human,P010,GitHub--35,444,0,2,117,382,1223,0,0,0
+human,human,P010,Google Flights--34,309,0,2,157,264,878,0,0,0
+human,human,P010,Google Map--35,625,0,3,430,589,1637,12,0,81
+human,human,P010,Google Search--28,1143,3,138,529,1244,3414,46,0,0
+human,human,P010,Huggingface--14,154,0,0,36,126,448,0,0,4
+human,human,P011,Amazon--32,1018,0,5,293,1030,3291,484,0,0
+human,human,P011,Apple--29,621,0,3,419,634,1774,35,0,5
+human,human,P011,ArXiv--17,139,0,0,12,84,310,0,0,0
+human,human,P011,Booking--3,1025,0,31,490,1204,3068,274,0,0
+human,human,P011,Coursera--21,999,1,27,517,1084,2893,34,0,0
+human,human,P011,GitHub--35,468,1,2,134,407,1296,0,0,0
+human,human,P011,Google Flights--34,308,0,2,155,259,872,0,0,0
+human,human,P011,Google Map--35,1151,0,3,961,1100,2712,37,0,36
+human,human,P011,Google Search--28,951,2,63,351,928,2742,6,0,43
+human,human,P011,Huggingface--14,153,0,0,30,126,446,0,0,4
+human,human,P012,Amazon--32,952,0,7,311,1035,3104,480,0,0
+human,human,P012,Apple--29,204,0,2,197,210,609,7,0,0
+human,human,P012,ArXiv--17,126,0,0,8,70,272,0,0,0
+human,human,P012,Booking--3,1777,1,32,862,2013,5411,462,0,2
+human,human,P012,Coursera--21,1055,1,27,605,1168,3046,34,0,0
+human,human,P012,GitHub--35,564,0,4,192,502,1578,0,0,0
+human,human,P012,Google Flights--34,350,0,2,198,318,1028,0,0,0
+human,human,P012,Google Map--35,896,0,3,719,847,2180,39,0,39
+human,human,P012,Google Search--28,492,1,27,342,394,1376,20,0,0
+human,human,P012,Huggingface--14,159,0,0,36,130,462,0,0,4
+human,human,P013,Amazon--32,1053,0,4,402,1081,3516,613,0,0
+human,human,P013,Apple--29,426,0,3,273,416,1179,30,0,2
+human,human,P013,ArXiv--17,128,0,0,9,74,278,0,0,0
+human,human,P013,Booking--3,1409,1,30,623,1569,4249,273,0,2
+human,human,P013,Coursera--21,1916,1,27,1105,2263,5642,82,0,0
+human,human,P013,GitHub--35,326,1,2,93,310,959,0,0,0
+human,human,P013,Google Flights--34,334,0,2,183,291,959,0,0,0
+human,human,P013,Google Map--35,1556,0,3,1253,1499,3754,35,0,117
+human,human,P013,Google Search--28,554,1,10,276,529,1582,8,0,0
+human,human,P013,Huggingface--14,151,0,0,36,124,440,0,0,4
+human,human,P014,Amazon--32,972,0,7,358,1001,3220,558,0,0
+human,human,P014,Apple--29,358,0,2,302,327,976,17,0,0
+human,human,P014,ArXiv--17,267,0,0,29,179,653,0,0,0
+human,human,P014,Booking--3,1550,1,34,671,1753,4662,336,0,4
+human,human,P014,Coursera--21,1053,1,27,513,1137,3056,34,0,0
+human,human,P014,GitHub--35,413,0,2,92,352,1131,0,0,0
+human,human,P014,Google Flights--34,363,0,2,208,326,1048,0,0,0
+human,human,P014,Google Map--35,796,0,3,603,741,1987,19,0,73
+human,human,P014,Google Search--28,321,0,3,213,260,851,8,0,0
+human,human,P014,Huggingface--14,241,0,0,52,161,634,0,0,6
+human,human,P015,Amazon--32,683,0,5,287,834,2315,477,0,0
+human,human,P015,Apple--29,561,0,3,349,601,1591,43,0,7
+human,human,P015,ArXiv--17,189,0,0,23,121,447,0,0,0
+human,human,P015,Booking--3,1047,0,31,515,1209,3166,255,0,0
+human,human,P015,Coursera--21,1032,1,27,524,1117,2992,34,0,0
+human,human,P015,GitHub--35,348,0,2,86,335,1031,0,0,0
+human,human,P015,Google Flights--34,338,0,2,168,299,969,0,0,0
+human,human,P015,Google Map--35,1163,0,3,1007,1115,2739,40,0,38
+human,human,P015,Google Search--28,152,0,3,131,143,445,4,0,0
+human,human,P015,Huggingface--14,156,0,0,25,128,454,0,0,4
+human,human,P016,Amazon--32,975,0,7,298,1017,3172,488,0,0
+human,human,P016,Apple--29,218,0,2,210,223,650,7,0,0
+human,human,P016,ArXiv--17,242,0,0,58,117,545,0,0,0
+human,human,P016,Booking--3,2567,0,34,1332,2866,7818,424,0,6
+human,human,P016,Coursera--21,1176,1,27,733,1311,3394,34,0,0
+human,human,P016,GitHub--35,439,0,2,113,378,1209,0,0,0
+human,human,P016,Google Flights--34,297,0,2,146,253,841,0,0,0
+human,human,P016,Google Map--35,859,0,3,665,802,2137,26,0,68
+human,human,P016,Google Search--28,1007,3,112,500,1075,3006,49,0,0
+human,human,P016,Huggingface--14,152,0,0,36,124,442,0,0,4
+human,human,P017,Amazon--32,1149,0,5,431,1146,3792,634,0,0
+human,human,P017,Apple--29,313,0,2,286,305,900,10,0,5
+human,human,P017,ArXiv--17,468,6,37,173,429,1289,10,0,0
+human,human,P017,Booking--3,1344,1,30,685,1635,4101,462,0,0
+human,human,P017,Coursera--21,1420,1,27,708,1566,4156,45,0,0
+human,human,P017,GitHub--35,567,1,2,195,505,1592,0,0,0
+human,human,P017,Google Flights--34,802,1,18,520,740,2365,5,0,10
+human,human,P017,Google Map--35,719,0,3,543,690,1816,14,0,67
+human,human,P017,Google Search--28,502,0,4,348,441,1390,12,0,0
+human,human,P017,Huggingface--14,204,0,0,35,128,503,0,0,4
+human,human,P018,Amazon--32,1629,0,5,690,1691,5403,944,0,0
+human,human,P018,Apple--29,284,0,2,225,249,751,18,0,2
+human,human,P018,ArXiv--17,131,0,0,8,73,271,0,0,0
+human,human,P018,Booking--3,1675,1,34,792,1990,5128,558,0,4
+human,human,P018,Coursera--21,1349,1,27,671,1498,3941,48,0,0
+human,human,P018,GitHub--35,526,1,2,175,465,1470,0,0,0
+human,human,P018,Google Flights--34,313,0,2,163,267,893,0,0,0
+human,human,P018,Google Map--35,865,0,3,712,839,2080,25,0,38
+human,human,P018,Google Search--28,1353,2,142,584,1578,4127,93,0,8
+human,human,P018,Huggingface--14,246,0,0,70,170,629,0,0,4
+human,human,P019,Amazon--32,1962,0,4,1034,2018,6847,1590,0,0
+human,human,P019,Apple--29,444,0,2,361,426,1235,23,0,0
+human,human,P019,ArXiv--17,99,0,0,6,50,193,0,0,0
+human,human,P019,Booking--3,1429,1,34,694,1697,4324,391,0,0
+human,human,P019,Coursera--21,1399,1,28,875,1593,4068,45,0,0
+human,human,P019,GitHub--35,476,1,2,150,417,1321,0,0,0
+human,human,P019,Google Flights--34,332,0,2,175,280,935,0,0,0
+human,human,P019,Google Map--35,2928,0,3,2728,2918,6670,112,0,110
+human,human,P019,Google Search--28,1067,1,127,523,1232,3211,162,0,4
+human,human,P019,Huggingface--14,243,0,0,65,169,622,0,0,4
+human,human,P020,Amazon--32,666,0,5,219,733,2153,351,0,0
+human,human,P020,Apple--29,203,0,2,192,204,602,6,0,0
+human,human,P020,ArXiv--17,194,0,0,12,137,473,0,0,0
+human,human,P020,Booking--3,1119,1,31,567,1366,3390,436,0,0
+human,human,P020,Coursera--21,1087,1,27,563,1175,3155,37,0,0
+human,human,P020,GitHub--35,658,0,2,254,590,1858,0,0,0
+human,human,P020,Google Flights--34,334,0,2,183,288,958,0,0,0
+human,human,P020,Google Map--35,830,0,3,665,778,2009,43,0,40
+human,human,P020,Google Search--28,1206,2,127,593,1302,3607,55,0,0
+human,human,P020,Huggingface--14,173,0,0,44,143,503,0,0,4
+human,human,P021,Amazon--32,1058,0,5,414,1126,3499,636,0,0
+human,human,P021,Apple--29,435,0,2,377,420,1208,30,0,0
+human,human,P021,ArXiv--17,81,0,0,9,73,230,0,0,0
+human,human,P021,Booking--3,1115,1,31,541,1307,3319,243,0,0
+human,human,P021,Coursera--21,780,1,27,469,821,2215,22,0,0
+human,human,P021,GitHub--35,693,0,2,255,625,1963,0,0,0
+human,human,P021,Google Flights--34,310,0,2,164,264,882,0,0,0
+human,human,P021,Google Map--35,565,0,3,406,541,1506,11,0,76
+human,human,P021,Google Search--28,1107,2,76,575,1187,3325,39,0,0
+human,human,P021,Huggingface--14,158,1,0,24,128,458,0,0,4
+human,human,P022,Amazon--32,1057,0,4,450,1125,3601,703,0,0
+human,human,P022,Apple--29,545,0,3,378,562,1547,22,0,2
+human,human,P022,ArXiv--17,167,2,2,17,87,371,0,0,0
+human,human,P022,Booking--3,1962,1,34,901,2238,5950,305,0,4
+human,human,P022,Coursera--21,972,1,27,475,1056,2808,33,0,0
+human,human,P022,GitHub--35,444,0,2,125,384,1230,0,0,0
+human,human,P022,Google Flights--34,305,0,2,151,254,859,0,0,0
+human,human,P022,Google Map--35,2322,0,4,1955,2251,5638,65,0,122
+human,human,P022,Google Search--28,907,1,121,488,1009,2763,44,0,0
+human,human,P022,Huggingface--14,154,0,0,32,124,446,0,0,4
+agent,Fara-7B,Fara-7B_rep0,Amazon--32,994,18,32,439,983,1989,15,0,3
+agent,Fara-7B,Fara-7B_rep1,Amazon--32,1129,15,29,429,1107,2260,14,0,0
+agent,Fara-7B,Fara-7B_rep0,Apple--29,288,2,2,290,306,582,8,0,0
+agent,Fara-7B,Fara-7B_rep1,Apple--29,290,2,2,292,308,586,8,0,0
+agent,Fara-7B,Fara-7B_rep0,ArXiv--17,68,0,4,9,71,136,0,0,0
+agent,Fara-7B,Fara-7B_rep1,ArXiv--17,70,0,4,9,73,140,0,0,0
+agent,Fara-7B,Fara-7B_rep0,Booking--3,1295,7,59,725,1492,2754,269,0,4
+agent,Fara-7B,Fara-7B_rep1,Booking--3,1305,7,56,730,1483,2777,262,0,4
+agent,Fara-7B,Fara-7B_rep0,Coursera--21,792,5,39,553,895,1584,41,0,0
+agent,Fara-7B,Fara-7B_rep1,Coursera--21,581,3,38,393,656,1162,28,0,0
+agent,Fara-7B,Fara-7B_rep0,GitHub--35,434,2,7,151,445,875,4,0,24
+agent,Fara-7B,Fara-7B_rep1,GitHub--35,444,2,7,153,455,895,4,0,24
+agent,Fara-7B,Fara-7B_rep0,Google Flights--34,162,0,10,114,176,372,0,0,0
+agent,Fara-7B,Fara-7B_rep1,Google Flights--34,157,0,10,109,171,360,0,0,0
+agent,Fara-7B,Fara-7B_rep0,Google Map--35,476,1,13,398,479,953,8,0,33
+agent,Fara-7B,Fara-7B_rep1,Google Map--35,909,0,13,750,912,1819,28,0,87
+agent,Fara-7B,Fara-7B_rep0,Google Search--28,400,1,26,193,417,834,1,0,0
+agent,Fara-7B,Fara-7B_rep1,Google Search--28,1399,1,27,728,1481,2871,21,0,240
+agent,Fara-7B,Fara-7B_rep1,Huggingface--14,128,2,8,33,125,256,0,0,4
+agent,Fara-7B,Fara-7B_rep0,Huggingface--14,99,1,8,18,97,198,0,0,3
+agent,Browser-Use,Browser-Use_rep0,Amazon--32,1095,9,52,397,1050,3586,314,0,0
+agent,Browser-Use,Browser-Use_rep1,Amazon--32,1835,13,52,625,1885,6030,566,0,0
+agent,Browser-Use,Browser-Use_rep0,Apple--29,334,2,7,315,344,1002,7,0,0
+agent,Browser-Use,Browser-Use_rep1,Apple--29,240,4,9,219,248,716,7,0,0
+agent,Browser-Use,Browser-Use_rep0,ArXiv--17,77,0,8,12,73,221,0,0,0
+agent,Browser-Use,Browser-Use_rep1,ArXiv--17,79,2,10,12,72,225,0,0,0
+agent,Browser-Use,Browser-Use_rep0,Booking--3,2419,21,51,1359,2839,7367,251,0,6
+agent,Browser-Use,Browser-Use_rep1,Booking--3,2444,19,57,1471,2822,7455,299,0,6
+agent,Browser-Use,Browser-Use_rep0,Coursera--21,451,0,10,162,439,1344,2,0,0
+agent,Browser-Use,Browser-Use_rep1,Coursera--21,452,0,10,163,440,1347,3,0,0
+agent,Browser-Use,Browser-Use_rep0,GitHub--35,164,0,6,17,151,481,0,0,0
+agent,Browser-Use,Browser-Use_rep1,GitHub--35,162,0,5,16,150,475,0,0,0
+agent,Browser-Use,Browser-Use_rep0,Google Flights--34,70,0,13,18,59,267,0,0,0
+agent,Browser-Use,Browser-Use_rep1,Google Flights--34,70,0,13,18,59,267,0,0,0
+agent,Browser-Use,Browser-Use_rep0,Google Map--35,339,0,14,297,330,902,6,0,43
+agent,Browser-Use,Browser-Use_rep1,Google Map--35,311,0,14,269,302,845,6,0,43
+agent,Browser-Use,Browser-Use_rep0,Google Search--28,45,0,5,33,66,157,0,0,0
+agent,Browser-Use,Browser-Use_rep1,Google Search--28,53,0,7,37,77,185,0,0,0
+agent,Browser-Use,Browser-Use_rep0,Huggingface--14,118,1,12,22,93,344,0,0,3
+agent,Browser-Use,Browser-Use_rep1,Huggingface--14,118,1,12,18,93,344,0,0,3
+agent,UI-TARS,UI-TARS_rep0,Apple--29,46,1,2,46,47,94,0,0,0
+agent,UI-TARS,UI-TARS_rep1,Apple--29,46,1,2,46,47,94,0,0,0
+agent,UI-TARS,UI-TARS_rep0,ArXiv--17,11,0,0,0,10,22,0,0,0
+agent,UI-TARS,UI-TARS_rep1,ArXiv--17,11,0,0,0,10,22,0,0,0
+agent,UI-TARS,UI-TARS_rep0,Amazon--32,617,3,53,310,526,1563,227,0,0
+agent,UI-TARS,UI-TARS_rep1,Amazon--32,214,0,2,103,213,428,0,0,0
+agent,UI-TARS,UI-TARS_rep0,Booking--3,462,1,39,189,523,943,84,0,2
+agent,UI-TARS,UI-TARS_rep1,Booking--3,502,1,34,212,550,1016,64,0,2
+agent,UI-TARS,UI-TARS_rep0,Coursera--21,0,0,0,0,0,0,0,0,0
+agent,UI-TARS,UI-TARS_rep1,Coursera--21,419,1,30,332,454,815,11,0,0
+agent,UI-TARS,UI-TARS_rep0,GitHub--35,169,0,3,16,168,338,0,0,0
+agent,UI-TARS,UI-TARS_rep1,GitHub--35,154,0,2,13,153,308,0,0,0
+agent,UI-TARS,UI-TARS_rep0,Google Flights--34,1,0,0,0,0,2,0,0,0
+agent,UI-TARS,UI-TARS_rep1,Google Flights--34,63,0,10,21,62,194,0,0,0
+agent,UI-TARS,UI-TARS_rep0,Google Map--35,263,0,11,202,265,476,6,0,42
+agent,UI-TARS,UI-TARS_rep1,Google Map--35,274,0,11,212,276,490,6,0,42
+agent,UI-TARS,UI-TARS_rep0,Google Search--28,54,0,4,48,98,154,0,0,0
+agent,UI-TARS,UI-TARS_rep1,Google Search--28,48,0,4,42,86,136,0,0,0
+agent,UI-TARS,UI-TARS_rep0,Huggingface--14,111,1,8,20,96,222,0,0,5
+agent,UI-TARS,UI-TARS_rep1,Huggingface--14,107,1,8,18,92,214,0,0,3
+agent,SoM-GLM,SoM-GLM_rep0,Amazon--32,428,1,46,112,351,916,48,0,0
+agent,SoM-GLM,SoM-GLM_rep1,Amazon--32,448,1,53,130,352,980,60,0,0
+agent,SoM-GLM,SoM-GLM_rep0,Apple--29,46,1,2,46,47,94,0,0,0
+agent,SoM-GLM,SoM-GLM_rep1,Apple--29,46,1,2,46,47,94,0,0,0
+agent,SoM-GLM,SoM-GLM_rep0,ArXiv--17,11,0,0,0,10,22,0,0,0
+agent,SoM-GLM,SoM-GLM_rep1,ArXiv--17,11,0,0,0,10,22,0,0,0
+agent,SoM-GLM,SoM-GLM_rep0,Booking--3,328,1,41,119,406,683,102,0,0
+agent,SoM-GLM,SoM-GLM_rep1,Booking--3,300,1,41,118,375,625,100,0,0
+agent,SoM-GLM,SoM-GLM_rep0,Coursera--21,156,1,6,50,150,312,1,0,0
+agent,SoM-GLM,SoM-GLM_rep1,Coursera--21,249,1,28,110,255,499,12,0,0
+agent,SoM-GLM,SoM-GLM_rep0,GitHub--35,151,0,2,10,150,302,0,0,0
+agent,SoM-GLM,SoM-GLM_rep1,GitHub--35,151,0,2,10,150,302,0,0,0
+agent,SoM-GLM,SoM-GLM_rep0,Google Flights--34,62,0,10,20,61,191,0,0,0
+agent,SoM-GLM,SoM-GLM_rep1,Google Flights--34,63,0,10,21,62,194,0,0,0
+agent,SoM-GLM,SoM-GLM_rep0,Google Map--35,260,0,11,198,262,470,6,0,44
+agent,SoM-GLM,SoM-GLM_rep1,Google Map--35,282,0,11,220,284,492,6,0,44
+agent,SoM-GLM,SoM-GLM_rep0,Google Search--28,47,0,4,41,84,133,0,0,0
+agent,SoM-GLM,SoM-GLM_rep1,Google Search--28,46,0,4,40,82,130,0,0,0
+agent,SoM-GLM,SoM-GLM_rep0,Huggingface--14,105,1,8,17,90,210,0,0,3
+agent,SoM-GLM,SoM-GLM_rep1,Huggingface--14,105,1,8,17,90,210,0,0,3
+agent,SoM-GPT-5,SoM-GPT-5_rep0,Amazon--32,461,1,52,129,365,982,48,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep1,Amazon--32,498,1,52,139,401,1077,62,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep0,Apple--29,245,2,2,247,254,498,7,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep1,Apple--29,176,2,2,178,185,360,3,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep0,ArXiv--17,11,0,0,0,10,22,0,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep1,ArXiv--17,11,0,0,0,10,22,0,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep0,Booking--3,510,1,40,213,576,1074,135,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep1,Booking--3,741,3,44,327,848,1541,214,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep0,Coursera--21,372,1,30,237,387,741,14,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep1,Coursera--21,2054,13,40,1297,2441,4161,106,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep0,GitHub--35,199,0,3,23,197,398,0,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep1,GitHub--35,197,0,3,19,195,394,0,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep0,Google Flights--34,172,0,11,40,172,522,0,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep1,Google Flights--34,94,0,10,37,93,286,0,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep0,Google Map--35,483,0,13,356,488,824,8,0,66
+agent,SoM-GPT-5,SoM-GPT-5_rep1,Google Map--35,480,3,14,397,490,758,8,0,23
+agent,SoM-GPT-5,SoM-GPT-5_rep0,Google Search--28,88,0,5,72,155,244,0,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep1,Google Search--28,74,0,5,59,128,202,0,0,0
+agent,SoM-GPT-5,SoM-GPT-5_rep1,Huggingface--14,106,1,8,4,91,212,0,0,3
+agent,SoM-GPT-5,SoM-GPT-5_rep0,Huggingface--14,100,1,8,6,85,200,0,0,3
+agent,OpenCUA-7B,OpenCUA-7B_rep0,Amazon--32,1172,10,41,403,1214,2753,325,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep1,Amazon--32,998,4,54,323,1004,2293,251,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep0,Apple--29,288,2,2,289,303,584,5,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep1,Apple--29,580,2,2,582,631,1178,26,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep1,ArXiv--17,11,0,0,0,10,22,0,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep0,ArXiv--17,186,0,3,8,203,370,0,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep1,Booking--3,1181,3,52,549,1377,2414,204,0,4
+agent,OpenCUA-7B,OpenCUA-7B_rep0,Booking--3,6292,43,80,2876,7266,13071,1051,0,14
+agent,OpenCUA-7B,OpenCUA-7B_rep0,Coursera--21,6155,35,40,4196,7226,12455,266,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep1,Coursera--21,5713,37,40,3849,6814,11562,255,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep0,GitHub--35,155,0,2,14,154,310,0,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep1,GitHub--35,153,0,2,12,152,306,0,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep0,Google Flights--34,62,0,10,20,61,191,0,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep1,Google Flights--34,62,0,10,20,61,191,0,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep0,Google Map--35,84,0,3,74,83,122,2,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep1,Google Map--35,294,0,11,231,296,509,6,0,44
+agent,OpenCUA-7B,OpenCUA-7B_rep0,Google Search--28,48,0,4,42,86,136,0,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep1,Google Search--28,47,0,4,41,84,133,0,0,0
+agent,OpenCUA-7B,OpenCUA-7B_rep0,Huggingface--14,105,1,8,17,90,210,0,0,3
+agent,OpenCUA-7B,OpenCUA-7B_rep1,Huggingface--14,105,1,8,15,90,210,0,0,3
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,Amazon--32,543,1,47,190,466,1800,126,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,Amazon--32,523,1,45,178,448,1722,114,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,Apple--29,56,1,2,56,58,170,1,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,Apple--29,51,1,2,51,52,155,0,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,ArXiv--17,11,0,0,0,10,33,0,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,ArXiv--17,11,0,0,0,10,33,0,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,Booking--3,382,1,37,152,444,1162,80,0,4
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,Booking--3,396,1,39,154,454,1186,81,0,4
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,Coursera--21,275,1,28,139,281,817,11,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,Coursera--21,274,1,29,136,280,814,12,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,GitHub--35,155,0,2,14,154,465,0,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,GitHub--35,155,0,2,14,154,465,0,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,Google Flights--34,62,0,10,20,61,252,0,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,Google Flights--34,62,0,10,20,61,252,0,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,Google Map--35,322,0,11,255,324,774,6,0,47
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,Google Map--35,276,0,11,211,278,724,6,0,47
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,Google Search--28,44,0,4,39,79,167,0,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,Google Search--28,48,0,4,43,87,183,0,0,0
+agent,GUI-Owl-8B,GUI-Owl-8B_rep0,Huggingface--14,107,1,8,15,92,321,0,0,3
+agent,GUI-Owl-8B,GUI-Owl-8B_rep1,Huggingface--14,107,1,8,17,92,321,0,0,3

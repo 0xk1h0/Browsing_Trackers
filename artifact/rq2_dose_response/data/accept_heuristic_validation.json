@@ -1,0 +1,114 @@
+{
+  "Browser-Use": {
+    "processed": {
+      "n": 87,
+      "accept_rule_pct": 100.0,
+      "median_ratio": 421.0,
+      "median_pre": 0,
+      "median_post": 421
+    },
+    "ignored": {
+      "n": 0,
+      "accept_rule_pct": 0,
+      "median_ratio": 0,
+      "median_pre": 0,
+      "median_post": 0
+    }
+  },
+  "Fara-7B": {
+    "processed": {
+      "n": 270,
+      "accept_rule_pct": 100.0,
+      "median_ratio": 482.5,
+      "median_pre": 0.0,
+      "median_post": 482.5
+    },
+    "ignored": {
+      "n": 6,
+      "accept_rule_pct": 83.3,
+      "median_ratio": 296.0,
+      "median_pre": 0.0,
+      "median_post": 296.0
+    }
+  },
+  "OpenCUA-7B": {
+    "processed": {
+      "n": 255,
+      "accept_rule_pct": 100.0,
+      "median_ratio": 675.0,
+      "median_pre": 0,
+      "median_post": 675
+    },
+    "ignored": {
+      "n": 4,
+      "accept_rule_pct": 100.0,
+      "median_ratio": 827.5,
+      "median_pre": 0.0,
+      "median_post": 827.5
+    }
+  },
+  "SoM-GPT-5": {
+    "processed": {
+      "n": 259,
+      "accept_rule_pct": 100.0,
+      "median_ratio": 151.0,
+      "median_pre": 0,
+      "median_post": 151
+    },
+    "ignored": {
+      "n": 0,
+      "accept_rule_pct": 0,
+      "median_ratio": 0,
+      "median_pre": 0,
+      "median_post": 0
+    }
+  },
+  "GUI-Owl-8B": {
+    "processed": {
+      "n": 255,
+      "accept_rule_pct": 100.0,
+      "median_ratio": 93.0,
+      "median_pre": 0,
+      "median_post": 93
+    },
+    "ignored": {
+      "n": 1,
+      "accept_rule_pct": 100.0,
+      "median_ratio": 199.0,
+      "median_pre": 0,
+      "median_post": 199
+    }
+  },
+  "UI-TARS": {
+    "processed": {
+      "n": 129,
+      "accept_rule_pct": 96.9,
+      "median_ratio": 44.0,
+      "median_pre": 0,
+      "median_post": 44
+    },
+    "ignored": {
+      "n": 4,
+      "accept_rule_pct": 0.0,
+      "median_ratio": 1.0,
+      "median_pre": 0.0,
+      "median_post": 1.0
+    }
+  },
+  "SoM-GLM": {
+    "processed": {
+      "n": 247,
+      "accept_rule_pct": 100.0,
+      "median_ratio": 75.0,
+      "median_pre": 0,
+      "median_post": 75
+    },
+    "ignored": {
+      "n": 0,
+      "accept_rule_pct": 0,
+      "median_ratio": 0,
+      "median_pre": 0,
+      "median_post": 0
+    }
+  }
+}

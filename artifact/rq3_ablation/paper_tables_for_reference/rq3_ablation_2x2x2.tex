@@ -1,0 +1,57 @@
+\begin{table}[t]
+\centering
+\caption{Pseudo ID count per session and operational success rate under 4 primary conditions alongside $C_5$. Pseudo ID values are shown as \emph{median (IQR)} across per-session counts; $\Delta$ columns are median paired differences vs.\ the same agent's default baseline ($C_0$).}
+\label{tab:rq3-ablation-2x2x2}
+\small
+\setlength{\tabcolsep}{8pt}
+\resizebox{\linewidth}{!}{
+\begin{NiceTabular}{l l r r r r}
+\toprule
+ % & & \multicolumn{4}{c}{Fara-7B} & \multicolumn{4}{c}{Browser-Use} \\
+% \cmidrule(lr){3-6} \cmidrule(lr){7-10}
+\multirow{2.5}{*}{Agent} & \multirow{2.5}{*}{ID} & \multicolumn{2}{c}{Pseudo ID} & \multicolumn{2}{c}{Op. succ.} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6}
+ &  & median (IQR) & $\Delta$ & rate & $\Delta$ \\
+
+%& \makecell{Pseudo-ID\\median (std)} & $\Delta$ vs $C_0$ & \makecell{Op.\ succ.} & $\Delta$ succ. \\
+\midrule
+\multirow{5}{*}{Fara-7B}
+% & $C_0$ & 317 (574) & ---            & 54.6\% & ---          \\%& 346 (389) & ---           & 99.5\% & --- \\
+% & $C_2$ & 122 (273) & $-$38\%        & 50.0\% & $-$11.1\,pp  \\%& 64  (241) & $-$62\%       & 99.8\% & $+$0.3\,pp \\
+% & $C_5$ & 320 (597) & $\pm$0\%       & 53.0\% & $-$1.6\,pp   \\
+% & $C_7$ & 98  (236) & \textbf{$-$53\%} & 43.2\% & $-$11.4\,pp\\%& 54  (244) & \textbf{$-$63\%} & 99.8\% & $+$0.3\,pp \\
+% & $C_8$ & 132 (217) & $-$46\%   & 42.0\% & $-$12.6\,pp  \\%& 105 (242) & $-$42\%       & 99.7\% & $+$0.2\,pp \\
+& $C_0$ & 317 (135--757) & ---              & 89.5\% & ---          \\
+& $C_2$ & 122 \phantom{0}(58--304)  & $-$61\%          & 79.6\% & $-$12.9\,pp   \\
+& $C_5$ & 320 (126--773) & $\pm$0\%         & 89.1\% & $-$3.4\,pp    \\
+& $C_7$ & 98 \phantom{0}(56--225)   & \textbf{$-$69\%} & 81.0\% & $-$11.5\,pp   \\
+& $C_8$ & 132 \phantom{0}(68--247)  & $-$58\%          & 79.4\% & $-$13.1\,pp   \\
+\midrule
+\multirow{5}{*}{Browser-Use}
+% & $C_0$ &346 (389) & ---           & 99.5\% & --- \\
+% & $C_2$ &64  (241) & $-$62\%       & 99.8\% & $+$0.3\,pp \\
+% & $C_5$ & 285 (379) & $-$2\%       & 99.7\% & $+$0.2\,pp \\
+% & $C_7$ &  54  (244) & \textbf{$-$63\%} & 99.8\% & $+$0.3\,pp \\
+% & $C_8$ & 105 (242) & $-$42\%       & 99.7\% & $+$0.2\,pp \\
+& $C_0$ & 227 (121--653) & ---              & 36.8\% & --- \\
+& $C_2$ & 64 \phantom{0}(19--192)   & $-$72\%          & 30.8\% & $-$6.4\,pp    \\
+& $C_5$ & 185 (108--609) & $-$19\%          & 36.9\% & $-$0.3\,pp    \\
+& $C_7$ & 54 \phantom{0}(20--209)   & \textbf{$-$76\%} & 33.2\% & $-$4.0\,pp    \\
+& $C_8$ & 105 \phantom{0}(50--271)  & $-$54\%          & 34.9\% & $-$2.3\,pp    \\
+% \multirow{4}{*}{\textbf{Fara-7B}}
+% & $C_0$ default            & 532 & ---            & 61.1\% & ---         & 317 (574) & ---           & 54.6\% & --- \\
+% & $C_2$ $-$nav             & 387 & $-$38\%        & 50.0\% & $-$11.1\,pp & 122 (273) & $-$38\%       & 41.5\% & $-$13.1\,pp \\
+% & $C_5$ $-$history\_back & 469 & $-$1\% & 83.3\% & $+$22.2\,pp & --- & --- & --- & --- \\
+% & $C_7$ $-$nav,$-$cmp      & 235 & \textbf{$-$59\%} & 55.6\% & $-$5.5\,pp  & 98  (236) & \textbf{$-$53\%} & 43.2\% & $-$11.4\,pp \\
+% & $C_8$ $-$search,$-$nav,$-$cmp & 198 & $-$59\%   & 44.4\% & $-$16.7\,pp & 132 (217) & $-$46\%       & 42.0\% & $-$12.6\,pp \\
+% \midrule
+% \multirow{4}{*}{\textbf{Browser-Use}}
+% & $C_0$ default            & 594 & ---            & 100.0\% & ---         & 346 (389) & ---           & 99.5\% & --- \\
+% & $C_2$ $-$nav             &  90 & $-$61\%        & 100.0\% & $\pm$0.0\,pp & 64  (241) & $-$62\%       & 99.8\% & $+$0.3\,pp \\
+% & $C_5$ $-$history\_back & 486 & $-$16\% & 100.0\% & $\pm$0.0\,pp & --- & --- & --- & --- \\
+% & $C_7$ $-$nav,$-$cmp      &  45 & \textbf{$-$79\%} & 100.0\% & $\pm$0.0\,pp & 54  (244) & \textbf{$-$63\%} & 99.8\% & $+$0.3\,pp \\
+% & $C_8$ $-$search,$-$nav,$-$cmp & 161 & $-$45\%   & 100.0\% & $\pm$0.0\,pp & 105 (242) & $-$42\%       & 99.7\% & $+$0.2\,pp \\
+\bottomrule
+\end{NiceTabular}
+}
+\end{table}

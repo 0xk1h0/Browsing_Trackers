@@ -1,0 +1,106 @@
+{
+  "Browser-Use": {
+    "n_sessions": 311,
+    "explicit_accept": 89,
+    "explicit_reject": 0,
+    "accept_pct_of_decided": 100.0,
+    "n_with_cmp_network": 87,
+    "pct_with_cmp_network": 28.0,
+    "median_cmp_window_sec": 16.47,
+    "mean_cmp_window_sec": 21.9,
+    "session_outcomes": {
+      "no_banner": 221,
+      "explicit_accept": 89,
+      "inferred_cmp_only": 1
+    }
+  },
+  "Fara-7B": {
+    "n_sessions": 1277,
+    "explicit_accept": 2,
+    "explicit_reject": 1,
+    "accept_pct_of_decided": 66.7,
+    "n_with_cmp_network": 276,
+    "pct_with_cmp_network": 21.6,
+    "median_cmp_window_sec": 16.17,
+    "mean_cmp_window_sec": 42.44,
+    "session_outcomes": {
+      "no_banner": 1001,
+      "inferred_cmp_only": 273,
+      "explicit_accept": 2,
+      "explicit_reject": 1
+    }
+  },
+  "OpenCUA-7B": {
+    "n_sessions": 1285,
+    "explicit_accept": 123,
+    "explicit_reject": 5,
+    "accept_pct_of_decided": 96.1,
+    "n_with_cmp_network": 259,
+    "pct_with_cmp_network": 20.2,
+    "median_cmp_window_sec": 37.85,
+    "mean_cmp_window_sec": 54.07,
+    "session_outcomes": {
+      "no_banner": 972,
+      "explicit_accept": 123,
+      "inferred_cmp_only": 185,
+      "explicit_reject": 5
+    }
+  },
+  "SoM-GPT-5": {
+    "n_sessions": 1286,
+    "explicit_accept": 0,
+    "explicit_reject": 0,
+    "accept_pct_of_decided": null,
+    "n_with_cmp_network": 259,
+    "pct_with_cmp_network": 20.1,
+    "median_cmp_window_sec": 1.17,
+    "mean_cmp_window_sec": 6.08,
+    "session_outcomes": {
+      "no_banner": 1027,
+      "inferred_cmp_only": 259
+    }
+  },
+  "GUI-Owl-8B": {
+    "n_sessions": 1285,
+    "explicit_accept": 0,
+    "explicit_reject": 0,
+    "accept_pct_of_decided": null,
+    "n_with_cmp_network": 256,
+    "pct_with_cmp_network": 19.9,
+    "median_cmp_window_sec": 1.33,
+    "mean_cmp_window_sec": 1.9,
+    "session_outcomes": {
+      "no_banner": 1029,
+      "inferred_cmp_only": 256
+    }
+  },
+  "UI-TARS": {
+    "n_sessions": 1267,
+    "explicit_accept": 141,
+    "explicit_reject": 0,
+    "accept_pct_of_decided": 100.0,
+    "n_with_cmp_network": 133,
+    "pct_with_cmp_network": 10.5,
+    "median_cmp_window_sec": 1.59,
+    "mean_cmp_window_sec": 1.59,
+    "session_outcomes": {
+      "no_banner": 1083,
+      "explicit_accept": 141,
+      "inferred_cmp_only": 43
+    }
+  },
+  "SoM-GLM": {
+    "n_sessions": 1273,
+    "explicit_accept": 0,
+    "explicit_reject": 0,
+    "accept_pct_of_decided": null,
+    "n_with_cmp_network": 247,
+    "pct_with_cmp_network": 19.4,
+    "median_cmp_window_sec": 1.32,
+    "mean_cmp_window_sec": 1.18,
+    "session_outcomes": {
+      "no_banner": 1026,
+      "inferred_cmp_only": 247
+    }
+  }
+}

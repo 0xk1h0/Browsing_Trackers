@@ -1,0 +1,27 @@
+# Normalize line endings so a checkout with core.autocrlf=true (the Git for
+# Windows default) does not turn shell scripts into "set: pipefail: invalid
+# option name". Scripts, data tables and documents stay LF everywhere.
+* text=auto eol=lf
+*.sh     text eol=lf
+*.py     text eol=lf
+*.ipynb  text eol=lf
+*.toml   text eol=lf
+*.cff    text eol=lf
+*.txt    text eol=lf
+*.md     text eol=lf
+*.tsv    text eol=lf
+*.csv    text eol=lf
+*.json   text eol=lf
+*.jsonl  text eol=lf
+Dockerfile text eol=lf
+LICENSE    text eol=lf
+# Compressed archives, figures and fonts must never be touched.
+*.gz   binary
+*.xz   binary
+*.tar  binary
+*.zip  binary
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.woff binary
+*.woff2 binary

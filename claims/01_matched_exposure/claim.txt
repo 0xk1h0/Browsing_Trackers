@@ -1,0 +1,50 @@
+CLAIM 1 - A browser agent sent to do a task contacts more third-party
+tracker hosts than a person doing the same task from the same start page.
+
+Paper
+    Section 6.1 and Table 1, "Per-task unique tracker hosts on the matched
+    10-task pool". The abstract states the Amazon--32 case.
+
+Run
+    bash claims/01_matched_exposure/run.sh
+
+    Under a second. Covers 220 human sessions (22 participants x 10 tasks)
+    and 140 agent sessions (7 agents x 10 tasks x 2 repetitions).
+
+What you should see
+    Median unique tracker hosts per session. The right column is the range
+    across the seven agents.
+
+        task                  human   agents, low to high
+        Amazon--32                5   27 to 52
+        Apple--29                 2    2 to  8
+        ArXiv--17                 0    0 to  9
+        Booking--3               32   36 to 66
+        Coursera--21             27   10 to 40
+        GitHub--35                2    2 to  7
+        Google Flights--34        2    5 to 13
+        Google Map--35            3    7 to 14
+        Google Search--28       116    4 to 26
+        Huggingface--14           0    8 to 12
+        overall median            3    4 to 11
+
+How this compares to the paper
+    All ten human cells match Table 1, including the overall median of 3.
+    Of the 70 agent cells, 62 match and 8 differ, the largest being
+    UI-TARS on Amazon--32, printed 50 and reproduced 27. Table 1's agent
+    overall medians span 6.5 to 11.5 where this run gives 4 to 11, which
+    follows from that same UI-TARS column. See artifact/CLAIMS.md,
+    corrections C1 and C2.
+
+    Google Search--28 runs against the claim in both the paper and the run,
+    because the humans retyped queries across result pages. The paper
+    discusses this case, which is why it claims no uniform per-task rise.
+
+Checking it yourself
+    Diff the two copies of the table, or run python3 artifact/verify.py rq1
+    to compare every cell numerically.
+
+        diff claims/01_matched_exposure/expected/table1_trk_hosts.tsv \
+             artifact/rq1_human_vs_agent/expected_outputs/table1_trk_hosts.tsv
+
+    The overall median row is printed to the console only, not to the TSV.

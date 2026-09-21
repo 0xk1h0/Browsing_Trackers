@@ -1,0 +1,12 @@
+# Reproduction-only dependencies (no GPU, no mitmproxy, no Playwright).
+# Sufficient to regenerate every table and figure in the paper from the
+# per-session data shipped under each rq*/data/ directory.
+#
+# numpy, scipy and pandas are pinned to the versions used to produce the
+# camera-ready numbers. matplotlib only renders the figures; 3.10.9 runs on
+# Python 3.12, 3.13 and 3.14 alike, whereas 3.9.x fails on 3.14.
+
+numpy==2.4.2
+scipy==1.17.0
+matplotlib==3.10.9
+pandas==2.2.3

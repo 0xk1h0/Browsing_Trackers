@@ -1,0 +1,47 @@
+CLAIM 2 - Agents reach kinds of tracking services that the people in the
+study almost never touch on the same tasks.
+
+Paper
+    Abstract ("cross-device TV-correlation enrichers (0% human vs. 9.3%
+    agent) and native recommendation engines (1.4% vs. 9.3%)"),
+    Section 7.3, and Table 4.
+
+Run
+    bash claims/02_family_reach/run.sh
+
+    Under a second. Same 220 human and 140 agent sessions as claim 1.
+
+What you should see
+    Share of sessions contacting at least one host in each family, with the
+    artifact's one-sided Fisher test for agent greater than human.
+
+        family                        human %   agent %    Fisher p
+        cross-device ACR                  0.0       9.3     3.3e-06
+        native recommendation             1.4       9.3     5.3e-04
+        long-tail (other)                74.5      92.1     1.2e-05
+        identity resolution               9.5      10.7       0.425
+        audience measurement              9.5      10.7       0.425
+        open-RTB exchange                28.6      26.4       0.717
+        platform first-party ad-tech     55.0      39.3       0.999
+
+How this compares to the paper
+    All seven rows match Table 4 on all four printed columns, mean tracker
+    hosts and touch percentage for each cohort. The abstract's 0% vs 9.3%
+    and 1.4% vs 9.3% reproduce as 0.000 vs 9.286 and 1.364 vs 9.286.
+
+    Two families run the other way, and the paper reports them that way.
+    Platform first-party ad tags are touched by 55.0% of human sessions
+    against 39.3% of agent sessions, and open-RTB contact is comparable at
+    28.6% against 26.4%. The claim is about which families agents reach,
+    not a uniform increase.
+
+    The Fisher p column is an artifact addition. For this table the paper
+    reports a binomial-GLM likelihood-ratio test, which this run does not
+    perform.
+
+Checking it yourself
+    Diff the two copies of the table, or run python3 artifact/verify.py rq1.
+
+        cd claims/02_family_reach/expected
+        diff table4_family_composition.tsv \
+             ../../../artifact/rq1_human_vs_agent/expected_outputs/

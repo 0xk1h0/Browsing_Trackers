@@ -1,0 +1,8 @@
+agent	search	navigate	nav_cost	bins_0_1_pct	bins_11_plus_pct	architecture	n_sessions
+Fara-7B	yes	yes	1	40.6	15.7	Browser-tooling	1286
+OpenCUA-7B	no	no	>=3	56.4	13.5	Pixel-only CUA	1286
+Browser-Use	yes	yes	1	50.8	12.4	Browser-tooling	1286
+SoM-GPT-5	yes	yes	1	71.7	1.9	Visible-element	1286
+GUI-Owl-8B	no	no	1-2	90.4	0.1	Pixel-only CUA	1286
+SoM-GLM	yes	yes	1	93.2	0.0	Visible-element	1286
+UI-TARS	no	no	>=3	87.8	0.0	Pixel-only CUA	1286

@@ -1,0 +1,66 @@
+Intended use, and what this artifact is NOT suitable for
+========================================================
+
+Intended use
+------------
+This artifact supports three things.
+
+1. Reproducing the paper's results. Every table and figure in the paper is
+   regenerated from the per-session data shipped here, with no GPU, no network
+   access at run time, and no API keys. This is the path proposed for artifact
+   evaluation, and it takes under five minutes end to end.
+
+2. Reusing the measurement instrument. The capture harness, the JavaScript
+   fingerprinting shim, the seven-list tracker classifier with its 71 vendor
+   families, and the per-session aggregator are released as standalone
+   components under artifact/pipeline/. They carry no project-internal
+   imports and can be pointed at other browser agents or other task suites.
+
+3. Reusing the measurement data. The released per-session records let others
+   re-aggregate our sessions under different definitions of exposure, or
+   compare a new agent against our seven.
+
+What this artifact is NOT suitable for
+--------------------------------------
+Re-running the original collection. The measurements were taken against the
+live web between March 22 and April 13, 2026. Tracker deployments, consent
+flows, and page structure have changed since. Re-running the pipeline today
+will produce different numbers, and that is expected rather than a defect.
+The original campaign also consumed roughly 500 GPU-hours and paid API usage.
+Reviewers should evaluate the analysis path, not attempt re-collection.
+
+Reconstructing individual browsing behaviour. The released tiers are
+deliberately lossy. Raw HTTP flow bodies and raw cookie values are withheld
+under the study's IRB protocol. Cookie values appear only as salted hashes,
+and the salt is not released, so the released data cannot be used to look up
+a known identifier or to re-identify a participant.
+
+Claiming population-level generalization. The human cohort is 22
+participants recruited through university and personal networks, skewed toward
+technically experienced web users, and the task pool is a purposive stratified
+subset of ten WebVoyager tasks rather than a random sample. The comparison is
+matched and internally valid; it is not a population estimate. The paper says
+this, and users of the data should preserve the distinction.
+
+Measuring agents as deployed products. Each agent was run in our own harness
+with its own step budget and timeout, documented in artifact/agents/. Results
+characterize an action-space architecture under our configuration, not a
+vendor's shipping product.
+
+Filter-list currency. The tracker classifier uses filter-list snapshots frozen
+in March 2026 so that the classification is stable across the campaign. For
+new measurements, refresh the lists; classification rates will shift.
+
+Destructive actions
+-------------------
+The reproduction path is read-only with respect to the reviewer's system apart
+from writing outputs inside the artifact directory itself. It does not
+install system packages, does not modify system trust stores, and does not
+send network traffic.
+
+The full collection path, which is NOT part of the proposed evaluation, does
+install a local certificate authority so that mitmproxy can decrypt HTTPS, and
+it launches browsers that fetch live third-party content. Do not run that path
+on a machine whose trust store you care about, and do not run it against sites
+you are not authorized to measure. Its prerequisites and its cleanup steps are
+documented in artifact/INSTALL.md.

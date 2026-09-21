@@ -1,0 +1,15 @@
+# Model-serving environment for agents/*/serve.sh, which call `vllm serve`.
+# Install into its own virtual environment (see INSTALL.md); it does not
+# include the reproduction or harness packages and must not be merged with
+# requirements-full.txt.
+#
+# These are the versions present in the authors' environment at release. The
+# GPU stack was upgraded there after the collection window and the
+# collection-time versions were not recorded; any vLLM release able to serve
+# the checkpoints named in agents/registry.json will do. Resolves on Python
+# 3.12 and 3.13.
+
+vllm==0.23.0
+torch==2.11.0
+transformers==5.12.1
+huggingface_hub==1.19.0

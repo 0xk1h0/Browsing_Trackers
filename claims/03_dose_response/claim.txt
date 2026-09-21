@@ -1,0 +1,49 @@
+CLAIM 3 - The more a session moves from one site to another, the more
+tracking data it leaks.
+
+Paper
+    Section 7.1 and Figure 3.
+
+Run
+    bash claims/03_dose_response/run.sh
+
+    About 2 seconds. Bins 9,002 agent sessions from seven agents by their
+    cross-site transition count, then regenerates Figure 3.
+
+What you should see
+    Per-bin medians, one row per transition bin, exactly as the run prints
+    them (pop_pct is the share of the 9,002 sessions in the bin).
+
+        bin        n   pop_pct   med_trk med_pseudo    med_ctx    med_dev    fp_pct
+          0     3684      40.9         4       19.5         79        188     11.7%
+          1     2628      29.2      15.5      116.5      277.5      541.5     40.1%
+          2      407       4.5         6        187        293        590     56.8%
+        3-5     1311      14.6       100        306        605       1397     43.4%
+       6-10      410       4.6        58      602.5       1114     2497.5     68.3%
+        11+      562       6.2        62        971     1903.5     4275.5     54.6%
+
+How this compares to the paper
+    The three metrics Figure 3 plots rise from bin to bin with no reversal.
+    End points against the numbers Section 7.1 quotes:
+
+        quantity                 paper           this run
+        pseudo IDs               20 to 971       19.5 to 971
+        context signals          79 to 1,903     79 to 1,903.5
+        device/network           191 to 4,275    188 to 4,275.5
+        tracker hosts, bin 0     4               4
+        tracker hosts, bin 1     15              15.5
+
+    Two values do not match. The device and network floor is 188 here
+    against 191 printed. The fingerprint-trigger share is 11.7% and 40.1%
+    in the two low bins against 11.2% and 40.8% printed, while the bin 11+
+    value of 54.6% matches. Both are recorded in artifact/CLAIMS.md under RQ2.
+
+    The tracker-host column is not monotone, at 4, 15.5, 6, 100, 58, 62.
+    Figure 3 does not plot it and the paper does not claim it is monotone.
+
+Checking it yourself
+    Diff the two copies of the table, or run python3 artifact/verify.py rq2.
+    The figure lands at rq2_dose_response/figures/fig3_dose_response.pdf.
+
+        cd claims/03_dose_response/expected
+        diff table3.tsv ../../../artifact/rq2_dose_response/expected_outputs/

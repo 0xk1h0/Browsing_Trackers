@@ -1,0 +1,51 @@
+CLAIM 5 - Taking the agent's site-crossing actions away, at both the tool
+schema and the proxy, and blocking consent-banner CDNs, sharply cuts how
+many identifiers a session transmits.
+
+Paper
+    Abstract ("reduces median identifier transmission by 69-76% across the
+    benchmark"), Section 8, Table 5 for the condition names, Table 6 for
+    the numbers.
+
+Run
+    bash claims/05_ablation/run.sh
+
+    About 1 second. Recomputes every ablation cell over 643 tasks per cell,
+    two agents and five conditions, 6,430 sessions.
+
+What you should see
+    Median pseudonymous identifiers per session.
+
+        condition                       Fara-7B   Browser-Use
+        C0 default                          317           346
+        C2 no navigate                      122            64
+        C5 no back, negative control        320           285
+        C7 no navigate, no CMP               98            54
+        C8 no search, navigate, CMP         132           105
+
+        C7 reduction against C0           69.1%         84.4%
+
+    Operational success at C0 is 54.6% for Fara-7B, 99.5% for Browser-Use.
+
+How this compares to the paper
+    Eight of the ten medians match Table 6. Fara-7B matches on all five
+    conditions, its C7 reduction of 69.1% matches the printed -69%, and the
+    negative control behaves as described, C5 at 320 against a 317 baseline.
+
+    Two Browser-Use cells do not match. C0 prints 227 where the data gives
+    346, and C5 prints 185 where the data gives 285. Because C7 itself
+    reproduces at 54, the reduction becomes 84.4% rather than 76%, so the
+    abstract's range becomes 69 to 84%. artifact/CLAIMS.md covers the C0
+    cell as correction C3. C3 covers both the C0 and the C5 cell.
+
+    Table 6's operational success rates of 89.5% and 36.8% at C0 are not
+    derivable from any shipped file. This run gives 54.6% and 99.5% for the
+    same two cells. The camera-ready replaces operational success with
+    graded WebVoyager task success, as committed in the author response.
+    See artifact/CLAIMS.md, correction C4.
+
+Checking it yourself
+    Diff the two copies of the table, or run python3 artifact/verify.py rq3.
+
+        diff claims/05_ablation/expected/full_metrics_per_cell.csv \
+             artifact/rq3_ablation/data/rq3_643/full_metrics_per_cell.csv

@@ -1,0 +1,3949 @@
+{
+  "design": {
+    "type": "cyclic-latin-square",
+    "n_participants": 22,
+    "n_tasks": 10,
+    "rationale": "Each participant performs the same 10 tasks but with a cyclic-shifted ordering. Across every block of 10 participants, every task appears exactly once in each ordinal position, counterbalancing first-order position effects (fatigue, learning, attention drift)."
+  },
+  "summary": {
+    "n_participants": 22,
+    "tasks_per_participant": 10,
+    "total_sessions": 220
+  },
+  "tasks_master": [
+    {
+      "task_id": "Google Search--28",
+      "domain": "Google Search",
+      "start_url": "https://www.google.com/",
+      "category": "information-lookup",
+      "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+      "answer_template": "a) IMDb score:\nb) Metacritic score:"
+    },
+    {
+      "task_id": "Google Map--35",
+      "domain": "Google Maps",
+      "start_url": "https://www.google.com/maps/",
+      "category": "map-and-location",
+      "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+      "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+    },
+    {
+      "task_id": "Amazon--32",
+      "domain": "Amazon",
+      "start_url": "https://www.amazon.com/",
+      "category": "search-and-filter",
+      "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+      "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+    },
+    {
+      "task_id": "Apple--29",
+      "domain": "Apple",
+      "start_url": "https://www.apple.com/",
+      "category": "information-lookup",
+      "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+      "answer_template": "a) Estimated battery life (wireless web):"
+    },
+    {
+      "task_id": "Google Flights--34",
+      "domain": "Google Flights",
+      "start_url": "https://www.google.com/travel/flights/",
+      "category": "search-and-filter",
+      "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+      "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+    },
+    {
+      "task_id": "Booking--3",
+      "domain": "Booking.com",
+      "start_url": "https://www.booking.com/",
+      "category": "booking-and-transaction",
+      "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+      "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+    },
+    {
+      "task_id": "Coursera--21",
+      "domain": "Coursera",
+      "start_url": "https://www.coursera.org/",
+      "category": "search-and-filter",
+      "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+      "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+    },
+    {
+      "task_id": "GitHub--35",
+      "domain": "GitHub",
+      "start_url": "https://github.com/",
+      "category": "information-lookup",
+      "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+      "answer_template": "a) Latest release version:\nb) Publish date:"
+    },
+    {
+      "task_id": "Huggingface--14",
+      "domain": "Hugging Face",
+      "start_url": "https://huggingface.co/",
+      "category": "information-lookup",
+      "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+      "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+    },
+    {
+      "task_id": "ArXiv--17",
+      "domain": "ArXiv",
+      "start_url": "https://arxiv.org/",
+      "category": "information-lookup",
+      "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+      "answer_template": "a) v3 submission date:"
+    }
+  ],
+  "latin_square": [
+    {
+      "pid": "P001",
+      "order": [
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17"
+      ]
+    },
+    {
+      "pid": "P002",
+      "order": [
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28"
+      ]
+    },
+    {
+      "pid": "P003",
+      "order": [
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35"
+      ]
+    },
+    {
+      "pid": "P004",
+      "order": [
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32"
+      ]
+    },
+    {
+      "pid": "P005",
+      "order": [
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29"
+      ]
+    },
+    {
+      "pid": "P006",
+      "order": [
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34"
+      ]
+    },
+    {
+      "pid": "P007",
+      "order": [
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3"
+      ]
+    },
+    {
+      "pid": "P008",
+      "order": [
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21"
+      ]
+    },
+    {
+      "pid": "P009",
+      "order": [
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35"
+      ]
+    },
+    {
+      "pid": "P010",
+      "order": [
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14"
+      ]
+    },
+    {
+      "pid": "P011",
+      "order": [
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17"
+      ]
+    },
+    {
+      "pid": "P012",
+      "order": [
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28"
+      ]
+    },
+    {
+      "pid": "P013",
+      "order": [
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35"
+      ]
+    },
+    {
+      "pid": "P014",
+      "order": [
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32"
+      ]
+    },
+    {
+      "pid": "P015",
+      "order": [
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29"
+      ]
+    },
+    {
+      "pid": "P016",
+      "order": [
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34"
+      ]
+    },
+    {
+      "pid": "P017",
+      "order": [
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3"
+      ]
+    },
+    {
+      "pid": "P018",
+      "order": [
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21"
+      ]
+    },
+    {
+      "pid": "P019",
+      "order": [
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35"
+      ]
+    },
+    {
+      "pid": "P020",
+      "order": [
+        "ArXiv--17",
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14"
+      ]
+    },
+    {
+      "pid": "P021",
+      "order": [
+        "Google Search--28",
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17"
+      ]
+    },
+    {
+      "pid": "P022",
+      "order": [
+        "Google Map--35",
+        "Amazon--32",
+        "Apple--29",
+        "Google Flights--34",
+        "Booking--3",
+        "Coursera--21",
+        "GitHub--35",
+        "Huggingface--14",
+        "ArXiv--17",
+        "Google Search--28"
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "participant_id": "P001",
+      "n_tasks": 10,
+      "latin_shift": 0,
+      "task_order_master_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 2,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 3,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 4,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 5,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 6,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 7,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 8,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 9,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 10,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P002",
+      "n_tasks": 10,
+      "latin_shift": 1,
+      "task_order_master_indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 2,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 3,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 4,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 5,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 6,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 7,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 8,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 9,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 10,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P003",
+      "n_tasks": 10,
+      "latin_shift": 2,
+      "task_order_master_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 2,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 3,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 4,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 5,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 6,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 7,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 8,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 9,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 10,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P004",
+      "n_tasks": 10,
+      "latin_shift": 3,
+      "task_order_master_indices": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 2,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 3,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 4,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 5,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 6,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 7,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 8,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 9,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 10,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P005",
+      "n_tasks": 10,
+      "latin_shift": 4,
+      "task_order_master_indices": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 2,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 3,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 4,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 5,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 6,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 7,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 8,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 9,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 10,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        }
+      ]
+    },
+    {
+      "participant_id": "P006",
+      "n_tasks": 10,
+      "latin_shift": 5,
+      "task_order_master_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 2,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 3,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 4,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 5,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 6,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 7,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 8,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 9,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 10,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        }
+      ]
+    },
+    {
+      "participant_id": "P007",
+      "n_tasks": 10,
+      "latin_shift": 6,
+      "task_order_master_indices": [
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 2,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 3,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 4,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 5,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 6,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 7,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 8,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 9,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 10,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P008",
+      "n_tasks": 10,
+      "latin_shift": 7,
+      "task_order_master_indices": [
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 2,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 3,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 4,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 5,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 6,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 7,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 8,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 9,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 10,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P009",
+      "n_tasks": 10,
+      "latin_shift": 8,
+      "task_order_master_indices": [
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 2,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 3,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 4,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 5,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 6,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 7,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 8,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 9,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 10,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P010",
+      "n_tasks": 10,
+      "latin_shift": 9,
+      "task_order_master_indices": [
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 2,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 3,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 4,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 5,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 6,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 7,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 8,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 9,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 10,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        }
+      ]
+    },
+    {
+      "participant_id": "P011",
+      "n_tasks": 10,
+      "latin_shift": 0,
+      "task_order_master_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 2,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 3,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 4,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 5,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 6,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 7,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 8,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 9,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 10,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P012",
+      "n_tasks": 10,
+      "latin_shift": 1,
+      "task_order_master_indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 2,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 3,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 4,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 5,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 6,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 7,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 8,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 9,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 10,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P013",
+      "n_tasks": 10,
+      "latin_shift": 2,
+      "task_order_master_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 2,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 3,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 4,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 5,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 6,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 7,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 8,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 9,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 10,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P014",
+      "n_tasks": 10,
+      "latin_shift": 3,
+      "task_order_master_indices": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 2,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 3,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 4,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 5,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 6,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 7,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 8,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 9,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 10,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P015",
+      "n_tasks": 10,
+      "latin_shift": 4,
+      "task_order_master_indices": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 2,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 3,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 4,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 5,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 6,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 7,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 8,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 9,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 10,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        }
+      ]
+    },
+    {
+      "participant_id": "P016",
+      "n_tasks": 10,
+      "latin_shift": 5,
+      "task_order_master_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 2,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 3,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 4,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 5,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 6,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 7,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 8,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 9,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 10,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        }
+      ]
+    },
+    {
+      "participant_id": "P017",
+      "n_tasks": 10,
+      "latin_shift": 6,
+      "task_order_master_indices": [
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 2,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 3,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 4,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 5,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 6,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 7,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 8,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 9,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 10,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P018",
+      "n_tasks": 10,
+      "latin_shift": 7,
+      "task_order_master_indices": [
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 2,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 3,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 4,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 5,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 6,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 7,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 8,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 9,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 10,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P019",
+      "n_tasks": 10,
+      "latin_shift": 8,
+      "task_order_master_indices": [
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 2,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 3,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 4,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 5,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 6,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 7,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 8,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 9,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 10,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P020",
+      "n_tasks": 10,
+      "latin_shift": 9,
+      "task_order_master_indices": [
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 2,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 3,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 4,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 5,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 6,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 7,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 8,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 9,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 10,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        }
+      ]
+    },
+    {
+      "participant_id": "P021",
+      "n_tasks": 10,
+      "latin_shift": 0,
+      "task_order_master_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        },
+        {
+          "order": 2,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 3,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 4,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 5,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 6,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 7,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 8,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 9,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 10,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        }
+      ]
+    },
+    {
+      "participant_id": "P022",
+      "n_tasks": 10,
+      "latin_shift": 1,
+      "task_order_master_indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1
+      ],
+      "categories": [
+        "booking-and-transaction",
+        "information-lookup",
+        "map-and-location",
+        "search-and-filter"
+      ],
+      "ad_profiles": [
+        "moderate"
+      ],
+      "domains": [
+        "Amazon",
+        "Apple",
+        "ArXiv",
+        "Booking.com",
+        "Coursera",
+        "GitHub",
+        "Google Flights",
+        "Google Maps",
+        "Google Search",
+        "Hugging Face"
+      ],
+      "tasks": [
+        {
+          "order": 1,
+          "master_index": 2,
+          "task_id": "Google Map--35",
+          "benchmark": "webvoyager",
+          "domain": "Google Maps",
+          "category": "map-and-location",
+          "ad_profile": "moderate",
+          "question": "On Google Maps, search for Big Bend National Park and report the place type, rating, and the address (or a short description).",
+          "start_url": "https://www.google.com/maps/",
+          "answer_template": "a) Place type:\nb) Rating:\nc) Address or short description:"
+        },
+        {
+          "order": 2,
+          "master_index": 3,
+          "task_id": "Amazon--32",
+          "benchmark": "webvoyager",
+          "domain": "Amazon",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Amazon, find one electric kettle with capacity >= 1.5 L, stainless steel build, and 4-star rating or higher. Report its name, price, and rating. (Do NOT purchase or add to cart.)",
+          "start_url": "https://www.amazon.com/",
+          "answer_template": "a) Product name:\nb) Price:\nc) Rating:"
+        },
+        {
+          "order": 3,
+          "master_index": 4,
+          "task_id": "Apple--29",
+          "benchmark": "webvoyager",
+          "domain": "Apple",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Apple website, look up the latest MacBook Air's Tech Specs and report the estimated battery life on wireless web.",
+          "start_url": "https://www.apple.com/",
+          "answer_template": "a) Estimated battery life (wireless web):"
+        },
+        {
+          "order": 4,
+          "master_index": 5,
+          "task_id": "Google Flights--34",
+          "benchmark": "webvoyager",
+          "domain": "Google Flights",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Google Flights, search a Lisbon -> Singapore trip departing Dec 7 and returning Dec 11. Pick one flight, then report the chosen airline/time AND the booking websites shown for it. (You do NOT need to actually book.)",
+          "start_url": "https://www.google.com/travel/flights/",
+          "answer_template": "a) Chosen flight (airline / time):\nb) Booking websites (>=1):"
+        },
+        {
+          "order": 5,
+          "master_index": 6,
+          "task_id": "Booking--3",
+          "benchmark": "webvoyager",
+          "domain": "Booking.com",
+          "category": "booking-and-transaction",
+          "ad_profile": "moderate",
+          "question": "On Booking.com, find a 4-star (or higher) hotel in Los Angeles for the stay from Dec 7 to Dec 11 (4 nights). Report the hotel name, star rating, and rating/review score.",
+          "start_url": "https://www.booking.com/",
+          "answer_template": "a) Hotel name:\nb) Star rating:\nc) Rating or review score:"
+        },
+        {
+          "order": 6,
+          "master_index": 7,
+          "task_id": "Coursera--21",
+          "benchmark": "webvoyager",
+          "domain": "Coursera",
+          "category": "search-and-filter",
+          "ad_profile": "moderate",
+          "question": "On Coursera, find one beginner-level Digital Marketing course. Report the course title, expected duration, the offering institution, and the main learning outcomes. (You do NOT need to log in or enroll.)",
+          "start_url": "https://www.coursera.org/",
+          "answer_template": "a) Course title:\nb) Expected duration:\nc) Offering institution:\nd) Main learning outcomes:"
+        },
+        {
+          "order": 7,
+          "master_index": 8,
+          "task_id": "GitHub--35",
+          "benchmark": "webvoyager",
+          "domain": "GitHub",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On GitHub, find the React repository and report the latest release version and its publish date.",
+          "start_url": "https://github.com/",
+          "answer_template": "a) Latest release version:\nb) Publish date:"
+        },
+        {
+          "order": 8,
+          "master_index": 9,
+          "task_id": "Huggingface--14",
+          "benchmark": "webvoyager",
+          "domain": "Hugging Face",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On the Hugging Face website, find the Pro account monthly price and at least two of its main features.",
+          "start_url": "https://huggingface.co/",
+          "answer_template": "a) Monthly price:\nb) Main features (>=2):"
+        },
+        {
+          "order": 9,
+          "master_index": 10,
+          "task_id": "ArXiv--17",
+          "benchmark": "webvoyager",
+          "domain": "ArXiv",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On ArXiv, find the 'GPT-4 Technical Report' paper and report the date when v3 was submitted. (You do NOT need to download the PDF; use only the information shown on the abstract page.)",
+          "start_url": "https://arxiv.org/",
+          "answer_template": "a) v3 submission date:"
+        },
+        {
+          "order": 10,
+          "master_index": 1,
+          "task_id": "Google Search--28",
+          "benchmark": "webvoyager",
+          "domain": "Google Search",
+          "category": "information-lookup",
+          "ad_profile": "moderate",
+          "question": "On Google Search, find the IMDb score and the Metacritic score of the movie \"Inception\".",
+          "start_url": "https://www.google.com/",
+          "answer_template": "a) IMDb score:\nb) Metacritic score:"
+        }
+      ]
+    }
+  ]
+}
